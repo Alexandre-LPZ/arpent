@@ -1,0 +1,8 @@
+{
+  "name": "arpent",
+  "description": "Arpent — l'immobilier français avec les données publiques de data.gouv.fr.",
+  "owner": { "name": "Alexandre Lopez" },
+  "plugins": [
+    { "name": "arpent", "source": "./", "description": "Bilan d'opération, estimation DVF, fiche d'un bien, attractivité d'une commune, dossier de succession — données publiques et garde-fous réglementaires français." }
+  ]
+}

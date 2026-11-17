@@ -1,0 +1,20 @@
+{
+  "name": "arpent",
+  "version": "0.1.0",
+  "description": "L'immobilier français avec les données publiques : bilan d'opération de marchand de biens (TVA sur marge), estimation et dossier de prix juste (DVF), fiche d'un bien (cadastre, urbanisme, DPE, risques), attractivité d'une commune, cadrage d'un dossier de succession — avec les garde-fous réglementaires français.",
+  "author": {
+    "name": "Alexandre Lopez & Claude"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/Alexandre-LPZ/arpent",
+  "repository": "https://github.com/Alexandre-LPZ/arpent",
+  "keywords": [
+    "immobilier",
+    "marchand-de-biens",
+    "dvf",
+    "data-gouv",
+    "foncier",
+    "france"
+  ],
+  "privacyPolicyUrl": "https://github.com/Alexandre-LPZ/arpent/blob/main/PRIVACY.md"
+}
