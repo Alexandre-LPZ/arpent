@@ -16,6 +16,7 @@ la main.
 | `/estimer` | Estimation par comparables DVF (médiane, quartiles) et **dossier de prix juste** daté à archiver |
 | `/fiche-bien` | Fiche d'un bien ou d'une parcelle : cadastre, urbanisme (PLU), risques (Géorisques), DPE, historique de prix |
 | `/ville` | Attractivité d'une commune : revenus, accessibilité, dynamisme, marché, projets |
+| `/marche` | Lecture du marché d'un territoire : acheteurs, équilibré ou vendeurs, tendance, sources datées, ce qui invaliderait la lecture — jamais de prévision chiffrée |
 | `/succession` | Cadrage d'un dossier de succession avec biens ou parts de SCI : issues possibles, transparence |
 
 Le skill couvre aussi la construction neuve « prête à finir » et un tableau des textes de référence
@@ -37,7 +38,8 @@ Géorisques, BODACC, Recherche d'entreprises) sont interrogées seulement si l'o
 disponible.
 
 ## Installation
-- **Claude Code** : `/plugin marketplace add Alexandre-LPZ/arpent` puis `/plugin install arpent@arpent`
+- **Application Claude / Cowork** : Plug-ins → Ajouter un marketplace → `Alexandre-LPZ/arpent` → installer Arpent (à confirmer sur votre version)
+- **Claude Code** : `/plugin marketplace add Alexandre-LPZ/arpent` puis `/plugin install arpent@arpent`, puis `/reload-plugins` ; les commandes s'appellent `/arpent:ville`, `/arpent:marche`, etc.
 - **Claude (chat, Cowork)** : depuis le répertoire des plug-ins une fois publié, ou en ajoutant le
   connecteur `https://mcp.data.gouv.fr/mcp` et le skill séparément.
 

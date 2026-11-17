@@ -1,6 +1,6 @@
 ---
 name: arpent
-description: Immobilier français avec les données publiques de data.gouv.fr. Utiliser pour un bilan d'opération de marchand de biens (TVA sur marge), une estimation de prix et un dossier de comparables (DVF), la fiche d'un bien ou d'une parcelle (cadastre, urbanisme, DPE, risques), l'attractivité d'une commune, la construction neuve « prête à finir », ou le cadrage d'un dossier de succession avec biens ou parts de SCI. Porte les garde-fous réglementaires français.
+description: Immobilier français avec les données publiques de data.gouv.fr. Utiliser pour un bilan d'opération de marchand de biens (TVA sur marge), une estimation de prix et un dossier de comparables (DVF), la fiche d'un bien ou d'une parcelle (cadastre, urbanisme, DPE, risques), l'attractivité d'une commune, la lecture du marché d'un territoire, la construction neuve « prête à finir », ou le cadrage d'un dossier de succession avec biens ou parts de SCI. Porte les garde-fous réglementaires français.
 ---
 
 # Arpent — l'immobilier français avec les données publiques
@@ -37,6 +37,7 @@ cher quand on les oublie).
 | Lire le vendeur (A/B/C), les annonces, le mandat exclusif | `references/vendeur.md` | — |
 | Tout savoir d'un bien ou d'une parcelle | `references/fiche-bien.md` | `/fiche-bien` |
 | Une commune vaut-elle une opération ? | `references/territoire.md` | `/ville` |
+| Où en est le marché, dans quel sens il va (sans prévision chiffrée) | `references/marche.md` | `/marche` |
 | Construction neuve « prête à finir » | `references/construction.md` | — |
 | Dossier de succession, biens ou parts de SCI | `references/succession.md` | `/succession` |
 | Où trouver chaque donnée, ses limites | `references/sources.md` | — |

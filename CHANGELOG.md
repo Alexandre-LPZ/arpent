@@ -1,5 +1,15 @@
 # Journal des versions — Arpent
 
+## 0.2.0 — 17 novembre 2026
+- **Nouveau module `/marche`** (`references/marche.md`) : lecture du marché d'un territoire —
+  acheteurs / équilibré / vendeurs — à partir du taux des crédits, des volumes, de l'indice de prix
+  à qualité constante (Fonciris, sur DVF), des indices Notaires-Insee et de l'accessibilité. Chaque
+  chiffre daté, la colonne « ce qui invaliderait la lecture » obligatoire, **jamais de prévision
+  chiffrée**. Exemple vérifié sur les Yvelines. Branché sur `/bilan` : la lecture durcit ou
+  assouplit l'hypothèse de revente.
+- Deux jeux ajoutés à `sources.md` : indice Fonciris (`6ace116d…`) et accessibilité Terralyse
+  (`6aa01497…`). Vérifié : les séries de taux et Notaires-Insee ne sont pas sur data.gouv.
+
 ## 0.1.1 — 17 novembre 2026
 Corrections issues du premier test réel (Le Chesnay-Rocquencourt, 78158) :
 - **Emploi** : la grille d'attractivité mesure l'emploi *au lieu de travail* et l'indice de

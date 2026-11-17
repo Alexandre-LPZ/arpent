@@ -10,6 +10,8 @@ de dernière mise à jour avant de citer un chiffre.
 | DVF géolocalisé, fichiers par commune | Demandes de valeurs foncières géolocalisées | data.gouv.fr | `5cc1b94a634f4165e96436c1` |
 | DVF enrichi, séries longues | DVF+ open-data | Cerema | `5d78f093634f411f434cd637` |
 | Indicateurs de prix agrégés par commune | Données valeurs foncières à la commune par période | Caisse des Dépôts | `62e9bbe102256eedbd0505d1` |
+| **Indice de prix à qualité constante** (hédonique sur DVF), trimestriel France/régions/départements, annuel 420 communes et 794 EPCI, base 100 = 2021T1, avec nombre de ventes | Indice Fonciris des prix des logements anciens | Fonciris (tiers, note de méthode publiée, corrélé 0,973 à Notaires-Insee) | `6ace116dd047c826d7f7b3bd` — fichiers `indice-departements.csv`, `indice-communes-annuel.csv`, `indice-epcis-annuel.csv` (colonnes `periode, indice, ic_bas, ic_haut, ventes, code, type`) |
+| Accessibilité : le ménage médian peut-il acheter le logement médian ? (3 822 communes, 2026) | Acheter dans sa ville | Terralyse (tiers, à partir de DVF, Insee, Banque de France) | `6aa01497eb15f2bce626c53e` |
 
 Limites DVF à connaître : mise à jour **semestrielle** (décalage de plusieurs mois) ; les ventes
 d'Alsace-Moselle (livre foncier) et de Mayotte n'y figurent pas — à confirmer sur la fiche du jeu ;
