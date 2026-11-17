@@ -7,7 +7,8 @@ opération quand les gens qui ont les moyens d'acheter du beau ont des raisons d
 |---|---|---|
 | Revenus | Revenu médian, part des hauts revenus | Insee — revenus localisés |
 | Accessibilité | Gare TGV ou grande ligne à moins de 30 min ; aéroport à moins d'1 h ; axes routiers | SNCF — gares ; carte |
-| Dynamisme économique | Emplois, créations d'entreprises, grands employeurs | Insee, API Recherche d'entreprises |
+| Dynamisme économique | **Emplois au lieu de travail** (pas les actifs résidents), indice de concentration de l'emploi, grands employeurs | Insee RP via `sources.md` (jeux vérifiés), API Recherche d'entreprises |
+| Grands équipements | Centre commercial régional, hôpital, campus, siège, base militaire : ce qui fait venir des gens et des emplois chaque jour | Sirene (établissements de la commune, tranche d'effectifs), presse spécialisée (CNCC, LSA) |
 | Attractivité touristique | Fréquentation, hébergement, notoriété | Insee, offices de tourisme |
 | Marché | Volume de ventes DVF sur 12 mois et tendance du prix médian | DVF |
 | Projets | Nouvelles gares, lignes, zones d'activité, grands équipements | Collectivités, maîtres d'ouvrage |
@@ -15,6 +16,17 @@ opération quand les gens qui ont les moyens d'acheter du beau ont des raisons d
 
 Verdict en trois niveaux : **cible** / **à creuser** / **hors cible**, toujours justifié critère par
 critère. Une ville sans dynamisme économique reste hors cible, même pas chère.
+
+Deux pièges constatés au premier test (Le Chesnay-Rocquencourt, 17/11/2026) :
+- **Actifs résidents ≠ emplois.** Le recensement donne les deux. Une commune dont les actifs
+  résidents baissent peut gagner des emplois. Le bon chiffre est l'emploi **au lieu de travail** et
+  l'**indice de concentration** (emplois pour 100 actifs résidents ; > 100 = pôle d'emploi).
+- **Un grand équipement ne se voit pas dans les statistiques résidentielles.** Un centre commercial
+  régional, un hôpital ou un campus apporte des emplois et des flux sans changer les revenus des
+  habitants. Toujours demander à l'humain « qu'est-ce qui fait venir du monde ici ? » et chercher
+  l'équipement dans Sirene (établissements de la commune par effectif). Les chiffres de
+  fréquentation viennent de l'exploitant ou de la presse spécialisée : les citer avec leur
+  source, et écrire « non vérifié » quand on n'en a que le récit.
 
 ## Effet d'une infrastructure de transport
 Pour une gare ou une ligne nouvelle : comparer le prix médian DVF dans un rayon autour de la station,

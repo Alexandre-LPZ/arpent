@@ -33,6 +33,28 @@ l'année en cours), au format csv.gz, plus un fichier unique sur 5 ans (≈ 580 
 de la Caisse des Dépôts (`62e9bbe1…`) **n'est pas** dans l'API tabulaire, et son API OpenDataSoft
 était instable le 17/11/2026 : source d'appoint seulement.
 
+## Emploi et dynamisme (vérifiés le 17/11/2026 sur 78158)
+| Donnée | Jeu de données | Organisme | ID / ressource |
+|---|---|---|---|
+| Indice de concentration de l'emploi par commune (2012, 2017, 2023) : emplois pour 100 actifs résidents, avec numérateur (emplois) et dénominateur | Indice de concentration de l'emploi | Tableau de bord des mobilités durables (source Insee RP) | jeu `69b9896d1c7cf501adf140fa`, ressource commune `b4f1bb42-ab1b-4493-8639-0b2ab7a9fb3b` (6,8 Mo, colonnes `annee, geocode_commune, valeur, numerateur, denominateur`) |
+| Emplois au lieu de travail par grand secteur (NA5, RP 2021) | Emplois au lieu de travail par grand secteur d'activité | TACCT (source Insee) | jeu `6a5e2c6ef1e50b63d84e2b8b`, ressource `066a8328-e72d-40fc-901c-dd48a01d5198` (séparateur `;`, colonne `code_geographique`, sommes `NA5AZ…NA5OQ`) |
+| Établissements d'une commune, par tranche d'effectifs (grands équipements, employeurs) | Sirene | Insee | API Sirene / Recherche d'entreprises — attention : l'effectif est celui de l'unité légale, pas de l'établissement, sauf champ dédié |
+
+Exemple 78158 (2023) : indice 93, soit 12 509 emplois pour 13 433 actifs résidents ; 11 699 emplois
+RP 2021 dont 5 597 commerce-services et 5 527 administration-santé-éducation. Vélizy : indice 339.
+
+Trouver les grands équipements d'une commune (testé le 17/11/2026) :
+`https://recherche-entreprises.api.gouv.fr/search?code_commune=<insee>&tranche_effectif_salarie=42,51,52,53`
+liste les unités légales de 500 salariés et plus ayant un établissement dans la commune — l'effectif
+est celui de l'unité légale entière (La Poste, EDF…), pas de l'établissement local : lire les
+adresses des établissements, pas le chiffre. Sur 78158, cette lecture a fait apparaître le Centre
+hospitalier de Versailles (siège 177 rue de Versailles, hôpital André-Mignot, SIREN 267802718, tranche
+2 000-4 999 salariés), les enseignes de Parly 2 et un hôpital privé (21 rue Moxouris). Le siège d'un
+groupe privé (Ramsay) est ailleurs : son établissement local n'apparaît qu'en cherchant l'adresse.
+Fréquentation d'un centre commercial : chiffre de l'exploitant via la presse (ex. Westfield Parly 2 :
+« 12 millions de visiteurs » en 2024, +5,5 %, 190 boutiques — mesinfos.fr, 07/03/2025, interview de la
+directrice, non audité).
+
 ## Le bien et la parcelle
 | Donnée | Source | Accès |
 |---|---|---|
