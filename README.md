@@ -43,7 +43,9 @@ disponible.
 ouvre son propre accès gratuit sur data.inpi.fr (trois minutes, procédure dans
 `skills/arpent/references/sources.md`) et garde ses identifiants dans deux variables d'environnement
 sur sa machine. Arpent ne contient aucun identifiant et n'appelle cette API que si ces variables
-existent ; sinon il demande les comptes à l'humain.
+existent ; sinon il demande les comptes à l'humain. Le même compte, avec un accès « APIs PI »
+activé à part, permet de vérifier que les marques, brevets et modèles d'une société sont bien
+déposés à son nom.
 
 ## Installation
 - **Application Claude / Cowork** : Plug-ins → Ajouter un marketplace → `Alexandre-LPZ/arpent` → installer Arpent (à confirmer sur votre version)

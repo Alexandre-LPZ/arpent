@@ -43,11 +43,11 @@ bilan.
 ### Parts de société, fonds de commerce
 | | |
 |---|---|
-| Sources de prix et d'état | comptes déposés (3 derniers exercices) : **API RNE de l'INPI** si l'utilisateur a son accès (procédure et codes de liasse dans `sources.md`), sinon demandés à l'humain ; actes déposés (statuts, PV, clauses d'agrément) par la même API ; BODACC (cessions de fonds, modifications de capital, procédures collectives) ; Sirene (établissements, effectifs par tranche) ; baux et contrats fournis par le vendeur |
+| Sources de prix et d'état | comptes déposés (3 derniers exercices) : **API RNE de l'INPI** si l'utilisateur a son accès (procédure et codes de liasse dans `sources.md`), sinon demandés à l'humain ; actes déposés (statuts, PV, clauses d'agrément) par la même API ; titres de propriété industrielle au nom de la société : API PI de l'INPI (`sources.md`) ; BODACC (cessions de fonds, modifications de capital, procédures collectives) ; Sirene (établissements, effectifs par tranche) ; baux et contrats fournis par le vendeur |
 | Lecture du bilan, par le Pilote | trésorerie réelle, dettes fournisseurs et fiscales, BFR, concentration des clients, engagements hors bilan, comptes courants d'associés, bail commercial (durée restante, loyer, destination) |
 | Frais | droits d'enregistrement sur cession de parts ou de fonds (barèmes différents selon la nature de la société et le bien : **à valider avec le notaire ou l'avocat**) ; audit, avocat pour la garantie d'actif et de passif |
 | Garde-fous | **garantie d'actif et de passif** rédigée par un avocat, jamais par Arpent ; une société à prépondérance immobilière est fiscalement traitée autrement qu'une société commerciale (**à valider**) ; le régime marchand de biens des immeubles (CGI 1115, TVA sur marge) ne se transpose pas automatiquement aux parts (**à valider**) |
-| Tue l'opération | dette fiscale ou sociale non provisionnée ; bail qui expire sans droit au renouvellement ; un client > 40 % du chiffre ; procédure collective en cours (BODACC) ; dirigeant indispensable qui part |
+| Tue l'opération | dette fiscale ou sociale non provisionnée ; bail qui expire sans droit au renouvellement ; un client > 40 % du chiffre ; procédure collective en cours (BODACC) ; dirigeant indispensable qui part ; **marque, brevet ou modèle exploités mais déposés au nom du dirigeant ou d'une autre société du groupe** (à vérifier par SIREN avec l'API PI, `sources.md`) : on achète alors des parts sans ce qui fait leur valeur |
 
 ### Véhicules de collection
 | | |

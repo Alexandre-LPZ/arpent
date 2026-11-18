@@ -68,6 +68,10 @@ directrice, non audité).
 | DPE avant 07/2021 / logements neufs | ADEME | `5ee2391763c79811ddfbc86a` / `67f7e5758ffc5d79ab9e8c27` |
 | Friches recensées | Sites référencés dans Cartofriches (Cerema) | `61892a26c94e39bde1dbf7ac` |
 
+Si une API publique est injoignable depuis l'environnement (cas vu le 18/11/2026 : Géorisques
+depuis Claude Code sur un poste Windows), Arpent écrit « non vérifié (service injoignable) » et
+donne le lien à l'humain ; il ne remplace jamais le résultat par un souvenir.
+
 ## Territoire
 | Donnée | Source | Accès |
 |---|---|---|
@@ -93,9 +97,9 @@ de `/succession` (les comptes d'une société, les statuts d'une SCI). Elle dema
 chaque utilisateur ouvre pour lui ; **aucun identifiant n'est dans Arpent**.
 
 **Ouvrir l'accès (trois minutes, accès immédiat le 18/11/2026)** : compte sur `data.inpi.fr`, puis
-formulaire « Demande de données RNE » (`https://data.inpi.fr/demande-de-donnees-rne`) : mode
-d'accès **API**, bases **Informations des entreprises**, **Comptes annuels**, **Actes**, licence
-acceptée. Description du projet : usage, requêtes unitaires par SIREN, pas de téléchargement de
+espace personnel → **« Mes accès API / SFTP »** → « Accès APIs RNE » → formulaire « Demande de
+données RNE » (`https://data.inpi.fr/demande-de-donnees-rne`) : mode d'accès **API**, bases
+**Informations des entreprises**, **Comptes annuels**, **Actes**, licence acceptée. Description du projet : usage, requêtes unitaires par SIREN, pas de téléchargement de
 masse, aucun fichier sur des personnes physiques.
 
 **Identifiants sur la machine de l'utilisateur**, jamais dans un fichier du projet : deux variables
@@ -117,6 +121,10 @@ lisible par les programmes de la session. **Sans ces deux variables, Arpent ne t
    ligne = `code` de la liasse fiscale + colonnes `m1`…`m4`.
 4. `GET /bilans/{id}/download` → le PDF des comptes, quand les données saisies manquent.
 
+Les actes (`actes[].id`) sont très souvent des **scans** (statuts signés photographiés) : sans outil
+de reconnaissance de texte, Arpent écrit « acte téléchargé, à relire à la main » et ne devine pas
+son contenu (date de clôture, clauses d'agrément).
+
 **Lire les liasses** : les codes sont ceux des formulaires Cerfa 2050 à 2053 (régime réel normal) ou
 2033 (simplifié). Montants : chaînes de 15 caractères, en euros, sans décimale, signe « - » en tête
 pour les négatifs (`000056232000000` = 56 232 000 000 €). Colonnes : page bilan actif, `m1` brut N,
@@ -133,6 +141,37 @@ confidentialité du compte de résultat : l'écrire) ; dépôts depuis 2017 ; qu
 jour ; licence INPI : pas de rediffusion en masse, retirer tout document marqué `deleted: true`.
 Dans l'app Claude sans outil shell, Arpent ne peut pas appeler cette API : il le dit et demande les
 comptes à l'humain.
+
+### Marques, brevets, dessins et modèles — API PI de l'INPI (testée le 18/11/2026)
+Sert à une vérification précise dans `/actif` et `/succession` : **les marques, brevets ou modèles
+exploités par la société sont-ils déposés à son nom ?** Cas vérifié le 18/11/2026 : SIREN
+441 639 465 (Renault SA, holding) → 0 marque française ; SIREN 780 129 987 (Renault s.a.s.,
+exploitation) → 1 216 marques. Acheter les parts de la mauvaise entité, c'est acheter sans la marque.
+
+**Ouvrir l'accès** : même compte `data.inpi.fr`, « Mes accès API / SFTP » → « Accès APIs PI » →
+formulaire : mode **API**, bases marques, brevets, dessins et modèles, licence. L'accès est accordé
+tout de suite, **mais la passerelle PI est un autre système** : un email d'activation arrive, il
+faut y définir son mot de passe (le même que data.inpi.fr pour garder les deux variables
+`INPI_RNE_USER` / `INPI_RNE_PASSWORD`). Tant que ce n'est pas fait, le login renvoie 401.
+
+**Appels** (base `https://api-gateway.inpi.fr`), avec gestion de cookies :
+1. `GET /services/uaa/api/authenticate` → répond 401, c'est normal : il pose le cookie `XSRF-TOKEN`.
+2. `POST /auth/login`, corps `{"username", "password", "rememberMe": true}`, en-tête
+   `X-XSRF-TOKEN` = valeur du cookie → 200 et cookies `access_token`, `refresh_token`.
+3. Chaque appel suivant renvoie les cookies de session et un en-tête `X-XSRF-TOKEN` **relu dans le
+   cookie à chaque appel** (il change à chaque réponse ; un jeton figé donne 403).
+4. Recherche : `POST /services/apidiffusion/api/marques/search` (ou `brevets/search`,
+   `modeles/search`), `Accept: application/json`, corps
+   `{"collections":["FR"],"query":"[ApplicantIdentifier=<SIREN>]","fields":["ApplicationNumber","Mark","MarkCurrentStatusCode","DEPOSANT"],"size":20}`.
+   Réponse : `metadata.count` (nombre total) et `results[].fields[]` (nom/valeur). Pour les brevets,
+   le SIREN se cherche avec `DESI` (déposant) ou `TISI` (titulaire) ; pour les modèles,
+   `ApplicantIdentifier`. Marques en vigueur seulement : ajouter `ET [ExpiryDate=AAAAMMJJ:99991231]`.
+   Notice complète d'un titre : `GET /services/apidiffusion/api/marques/notice/FR<numéro>` (XML).
+
+**Limites** : `ApplicantIdentifier` ne couvre que les titres **français** (collection FR) ; les
+marques de l'UE et internationales se cherchent par nom (`DEPOSANT`), moins fiable. Seule la
+recherche de marques par SIREN a été testée ; brevets et modèles suivent la même doc (v1.0 du
+11/10/2021) mais n'ont pas été vérifiés : le dire si on s'en sert. Quotas non chiffrés par l'INPI.
 
 **Alternatives privées** (Pappers, Infogreffe/DataInfogreffe, Societe.com) : mêmes données,
 confort en plus, payantes au-delà d'un palier. Si un connecteur de ce type est chargé dans la

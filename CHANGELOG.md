@@ -1,5 +1,15 @@
 # Journal des versions — Arpent
 
+## 0.5.0 — 18 novembre 2026
+- **Marques, brevets, dessins et modèles : API PI de l'INPI** (`references/sources.md`), testée le
+  18/11/2026 : recherche des marques françaises par SIREN du titulaire. Cas vérifié : la holding
+  Renault SA n'a aucune marque, Renault s.a.s. en a 1 216. Nouvelle ligne « tue l'opération » dans
+  `/actif` : titres exploités mais déposés au nom du dirigeant ou d'une autre entité. Même compte
+  INPI, mais passerelle distincte avec son email d'activation ; procédure et pièges (jeton XSRF à
+  relire à chaque appel) documentés. Brevets et modèles non testés, dit tel quel.
+- Leçons du premier bilan réel avec l'API RNE (garage, Yvelines) : chemin « Mes accès API / SFTP »,
+  actes souvent scannés (« à relire à la main »), service public injoignable → « non vérifié ».
+
 ## 0.4.0 — 18 novembre 2026
 - **Comptes annuels et actes déposés : API RNE de l'INPI** (`references/sources.md`), testée le
   18/11/2026 sur une SARL de 2025 (aucun compte : l'API le dit) et sur un grand groupe (bilans saisis
