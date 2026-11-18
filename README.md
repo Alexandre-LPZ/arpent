@@ -1,7 +1,8 @@
 # Arpent — l'immobilier français avec les données publiques
 
 **Arpent** est un plug-in Claude pour les professionnels de l'immobilier en France : marchands de
-biens, agents, intermédiaires en succession. Il branche Claude sur les données publiques de
+biens, agents, intermédiaires en succession — et pour tout ce qu'un marchand de biens achète pour
+revendre, immobilier ou non. Il branche Claude sur les données publiques de
 **data.gouv.fr** (via le serveur MCP officiel `https://mcp.data.gouv.fr/mcp`, en lecture seule, sans
 compte ni clé) et lui apprend à s'en servir avec la méthode du métier et les garde-fous du droit
 français.
@@ -13,6 +14,7 @@ la main.
 | Commande | Usage |
 |---|---|
 | `/bilan` | Bilan d'opération de marchand de biens : méthode à rebours, TVA sur marge, verdict par rapport à une cible de 5 à 15 % de marge |
+| `/actif` | Actif à revendre hors immobilier : parts de société, fonds de commerce, véhicule de collection, œuvre, bateau — même méthode à rebours, prix réalisés, frais et fiscalité de la classe (à valider), ce qui tue l'opération |
 | `/estimer` | Estimation par comparables DVF (médiane, quartiles) et **dossier de prix juste** daté à archiver |
 | `/fiche-bien` | Fiche d'un bien ou d'une parcelle : cadastre, urbanisme (PLU), risques (Géorisques), DPE, historique de prix |
 | `/ville` | Attractivité d'une commune : revenus, accessibilité, dynamisme, marché, projets |

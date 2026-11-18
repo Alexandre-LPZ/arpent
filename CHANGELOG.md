@@ -1,5 +1,15 @@
 # Journal des versions — Arpent
 
+## 0.3.0 — 18 novembre 2026
+- **Nouveau module `/actif`** (`references/actif.md`) : le marchand de biens, c'est l'intention de
+  revendre, pas la nature du bien. Même méthode à rebours que `/bilan`, appliquée aux parts de
+  société et fonds de commerce, véhicules de collection, œuvres et objets, bateaux : sources de prix
+  **réalisés** (enchères, cessions publiées, jamais des prix demandés), frais et fiscalité par classe
+  (régime de la marge, droit de suite, taxe forfaitaire, droits d'enregistrement — tous « à valider »),
+  ce qui tue l'opération. Rappel : garder l'actif au lieu de le revendre change le régime.
+- Les prix de référence hors immobilier ne sont pas sur data.gouv : Arpent les lit avec l'outil web
+  (résultats d'enchères cités avec maison, date et lot) ou écrit « non consulté ».
+
 ## 0.2.0 — 17 novembre 2026
 - **Nouveau module `/marche`** (`references/marche.md`) : lecture du marché d'un territoire —
   acheteurs / équilibré / vendeurs — à partir du taux des crédits, des volumes, de l'indice de prix
