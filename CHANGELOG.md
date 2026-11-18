@@ -1,5 +1,9 @@
 # Journal des versions — Arpent
 
+## 0.5.1 — 18 novembre 2026
+- Procédure d'activation de la passerelle PI précisée d'après l'email reçu (intitulé, expéditeur,
+  page « réinitialisation » qui sert à définir le mot de passe, contact INPI).
+
 ## 0.5.0 — 18 novembre 2026
 - **Marques, brevets, dessins et modèles : API PI de l'INPI** (`references/sources.md`), testée le
   18/11/2026 : recherche des marques françaises par SIREN du titulaire. Cas vérifié : la holding

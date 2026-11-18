@@ -150,9 +150,12 @@ exploitation) → 1 216 marques. Acheter les parts de la mauvaise entité, c'est
 
 **Ouvrir l'accès** : même compte `data.inpi.fr`, « Mes accès API / SFTP » → « Accès APIs PI » →
 formulaire : mode **API**, bases marques, brevets, dessins et modèles, licence. L'accès est accordé
-tout de suite, **mais la passerelle PI est un autre système** : un email d'activation arrive, il
-faut y définir son mot de passe (le même que data.inpi.fr pour garder les deux variables
-`INPI_RNE_USER` / `INPI_RNE_PASSWORD`). Tant que ce n'est pas fait, le login renvoie 401.
+tout de suite, **mais la passerelle PI est un autre système** : un email « Activation de votre
+compte APIs diffusion PI » (expéditeur `nepasrepondre@inpi.fr`) arrive dans la minute, avec un lien
+`api-gateway.inpi.fr/account/reset/finish?key=…`. La page se présente comme une réinitialisation de
+mot de passe : c'est là qu'on le **définit**, le même que data.inpi.fr pour garder les deux variables
+`INPI_RNE_USER` / `INPI_RNE_PASSWORD`. Tant que ce n'est pas fait, le login renvoie 401. Contact
+INPI pour ces accès : licences@inpi.fr.
 
 **Appels** (base `https://api-gateway.inpi.fr`), avec gestion de cookies :
 1. `GET /services/uaa/api/authenticate` → répond 401, c'est normal : il pose le cookie `XSRF-TOKEN`.
