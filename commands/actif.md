@@ -6,8 +6,13 @@ Lire d'abord `skills/arpent/references/actif.md` (et `marchand.md` pour la méth
 appliquer au cas : $ARGUMENTS
 
 Identifier la classe d'actif, chercher des prix **réalisés** (jamais des prix demandés), dérouler la
-méthode à rebours ligne à ligne avec l'origine de chaque montant, lister les frais et la fiscalité
-propres à la classe avec la mention « à valider » et le professionnel compétent, puis les points qui
-tuent l'opération. Pour une société : interroger Recherche d'entreprises et BODACC, demander les
-comptes déposés. Si l'actif pourrait être conservé plutôt que revendu, le signaler : le régime change.
-Terminer par le prix d'achat maximal et l'écart avec le prix demandé.
+méthode à rebours ligne à ligne avec l'origine de chaque montant et la **formule** de chaque ligne
+fiscale ou financière, lister les frais et la fiscalité propres à la classe avec la mention
+« à valider » et le professionnel compétent, puis les points qui tuent l'opération. Pour une
+société : interroger Recherche d'entreprises et BODACC, demander les comptes déposés, et dire si
+l'actif net corrigé inclut ou non le fonds. Si l'actif pourrait être conservé plutôt que revendu, le
+signaler : le régime change.
+
+Format d'Arpent : **le verdict en une ligne vient en premier** (prix d'achat maximal, écart avec le
+prix demandé, et la variable inconnue qui décide), puis les chiffres, les alertes, ce qui manque.
+Répéter le prix maximal et l'écart dans la conclusion.

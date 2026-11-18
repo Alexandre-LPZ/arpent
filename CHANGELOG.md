@@ -1,5 +1,14 @@
 # Journal des versions — Arpent
 
+## 0.3.1 — 18 novembre 2026
+Corrections après le premier test réel de `/actif` (SARL de négoce automobile, Yvelines) :
+- Chaque ligne fiscale ou financière du tableau à rebours écrit sa **formule** (base × taux =
+  montant) ; la base de la plus-value imposable est écrite en clair. Un montant qui ne se recalcule
+  pas à partir du tableau est une erreur.
+- Parts de société : le prix des parts additionne actif net corrigé et valeur du fonds **seulement si**
+  le fonds n'est pas déjà au bilan (fonds acheté = immobilisation incorporelle à retirer avant).
+- `/actif` : le verdict en une ligne vient en premier, comme pour les autres commandes.
+
 ## 0.3.0 — 18 novembre 2026
 - **Nouveau module `/actif`** (`references/actif.md`) : le marchand de biens, c'est l'intention de
   revendre, pas la nature du bien. Même méthode à rebours que `/bilan`, appliquée aux parts de

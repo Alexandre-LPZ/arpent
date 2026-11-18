@@ -27,7 +27,17 @@ professionnel, jamais de fiche sur un particulier.
 6. = **Prix d'achat maximal**, à comparer au prix demandé.
 
 Présentation : tableau ligne à ligne, origine de chaque montant (résultat d'enchère daté, devis,
-hypothèse). Une hypothèse s'écrit « hypothèse ».
+hypothèse). Une hypothèse s'écrit « hypothèse ». **Chaque ligne fiscale ou financière écrit sa
+formule** dans la colonne origine : « 3 % × (262 000 − 23 000) = 7 170 », « 25 % × plus-value de
+98 000 = 24 500 ». Un montant qui ne se recalcule pas à partir du tableau est une erreur, pas une
+prudence. La plus-value imposable se calcule sur le prix de revente retenu moins le prix d'achat
+maximal moins les frais déductibles du même tableau, et cette base est écrite en clair.
+
+**Cas des parts de société** : prix des parts = actif net corrigé **+** valeur du fonds, à une
+condition : que l'actif net corrigé n'inclue pas déjà le fonds. Un fonds créé par la société n'est
+pas au bilan (on l'ajoute) ; un fonds acheté y figure en immobilisation incorporelle (on le retire de
+l'actif net avant d'ajouter sa valeur de marché, sinon il est compté deux fois). Le dire dans le
+bilan.
 
 ## Par classe d'actif — sources, frais, ce qui tue l'opération
 ### Parts de société, fonds de commerce
