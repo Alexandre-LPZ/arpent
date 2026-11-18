@@ -43,7 +43,7 @@ bilan.
 ### Parts de société, fonds de commerce
 | | |
 |---|---|
-| Sources de prix et d'état | comptes déposés au greffe (3 derniers exercices : Pappers, Infogreffe, data.inpi.fr) ; BODACC (cessions de fonds, modifications de capital, procédures collectives) ; Sirene (établissements, effectifs par tranche) ; baux et contrats fournis par le vendeur |
+| Sources de prix et d'état | comptes déposés (3 derniers exercices) : **API RNE de l'INPI** si l'utilisateur a son accès (procédure et codes de liasse dans `sources.md`), sinon demandés à l'humain ; actes déposés (statuts, PV, clauses d'agrément) par la même API ; BODACC (cessions de fonds, modifications de capital, procédures collectives) ; Sirene (établissements, effectifs par tranche) ; baux et contrats fournis par le vendeur |
 | Lecture du bilan, par le Pilote | trésorerie réelle, dettes fournisseurs et fiscales, BFR, concentration des clients, engagements hors bilan, comptes courants d'associés, bail commercial (durée restante, loyer, destination) |
 | Frais | droits d'enregistrement sur cession de parts ou de fonds (barèmes différents selon la nature de la société et le bien : **à valider avec le notaire ou l'avocat**) ; audit, avocat pour la garantie d'actif et de passif |
 | Garde-fous | **garantie d'actif et de passif** rédigée par un avocat, jamais par Arpent ; une société à prépondérance immobilière est fiscalement traitée autrement qu'une société commerciale (**à valider**) ; le régime marchand de biens des immeubles (CGI 1115, TVA sur marge) ne se transpose pas automatiquement aux parts (**à valider**) |
@@ -78,7 +78,8 @@ bilan.
 
 ## Ce qu'Arpent peut faire avec les données publiques
 - **Sociétés** : identité, dirigeants publiés, établissements, effectifs (API Recherche d'entreprises) ;
-  annonces légales (API BODACC) ; comptes déposés (greffe, via l'outil web). Voir `sources.md`.
+  annonces légales (API BODACC) ; comptes annuels et actes déposés (API RNE de l'INPI, avec le compte
+  de l'utilisateur ; sans accès, « comptes non consultés » et demande à l'humain). Voir `sources.md`.
 - **Tout le reste** (voitures, œuvres, bateaux) : les prix de référence ne sont **pas** sur data.gouv.
   Arpent lit les résultats d'enchères avec l'outil web, cite la maison, la date et le lot ; sans outil
   web, il demande à l'humain les résultats et écrit « non consulté ».

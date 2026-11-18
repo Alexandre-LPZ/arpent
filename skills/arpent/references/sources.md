@@ -85,3 +85,55 @@ régionales ont été trouvées au 17/11/2026.
 | Identité d'une société, dirigeants publiés, siège, date de création | API Recherche d'entreprises (DINUM) | `https://recherche-entreprises.api.gouv.fr` |
 | Annonces légales : cessions, dissolutions, procédures collectives | API BODACC (DILA) | `https://bodacc-datadila.opendatasoft.com/api/explore/v2.0` |
 | Répertoire Sirene | API Sirene (Insee, compte requis) | `https://api.insee.fr/api-sirene/3.11` |
+| **Comptes annuels déposés, actes (statuts, PV), informations RNE** | **API RNE (INPI)**, compte gratuit requis | voir ci-dessous |
+
+### Comptes annuels et actes — API RNE de l'INPI (testée le 18/11/2026)
+C'est la source primaire : le dépôt légal lui-même. Elle ferme le principal manque de `/actif` et
+de `/succession` (les comptes d'une société, les statuts d'une SCI). Elle demande un compte, que
+chaque utilisateur ouvre pour lui ; **aucun identifiant n'est dans Arpent**.
+
+**Ouvrir l'accès (trois minutes, accès immédiat le 18/11/2026)** : compte sur `data.inpi.fr`, puis
+formulaire « Demande de données RNE » (`https://data.inpi.fr/demande-de-donnees-rne`) : mode
+d'accès **API**, bases **Informations des entreprises**, **Comptes annuels**, **Actes**, licence
+acceptée. Description du projet : usage, requêtes unitaires par SIREN, pas de téléchargement de
+masse, aucun fichier sur des personnes physiques.
+
+**Identifiants sur la machine de l'utilisateur**, jamais dans un fichier du projet : deux variables
+d'environnement, `INPI_RNE_USER` (l'email du compte) et `INPI_RNE_PASSWORD`. Conseil : un mot de
+passe propre à ce compte, pas un mot de passe réutilisé, car une variable d'environnement est
+lisible par les programmes de la session. **Sans ces deux variables, Arpent ne tente rien** : il
+écrit « comptes non consultés (pas d'accès INPI) » et demande les liasses à l'humain.
+
+**Appels** (base `https://registre-national-entreprises.inpi.fr/api`) :
+1. `POST /sso/login`, corps JSON `{"username": …, "password": …}` → `token` (valable pour la
+   session ; le redemander en cas de 401). En-tête ensuite : `Authorization: Bearer <token>`.
+2. `GET /companies/{siren}/attachments` → trois listes : `actes` (PDF : statuts, PV, liste des
+   souscripteurs…), `bilans` (PDF des comptes), `bilansSaisis` (comptes en données). Chaque entrée :
+   `id`, `dateCloture`, `dateDepot`, `typeBilan` (C complet, S simplifié, K consolidé),
+   `confidentiality`. Une liste vide ou absente = **« aucun compte déposé à ce jour »** (cas vérifié
+   sur une SARL créée en 2025) ; ce n'est pas une anomalie, c'est une information.
+3. `GET /bilans-saisis/{id}` → `bilanSaisi.bilan.identite` (SIREN, clôture N et N−1, durée, code
+   activité, devise, code confidentialité) et `bilanSaisi.bilan.detail.pages[].liasses[]`, chaque
+   ligne = `code` de la liasse fiscale + colonnes `m1`…`m4`.
+4. `GET /bilans/{id}/download` → le PDF des comptes, quand les données saisies manquent.
+
+**Lire les liasses** : les codes sont ceux des formulaires Cerfa 2050 à 2053 (régime réel normal) ou
+2033 (simplifié). Montants : chaînes de 15 caractères, en euros, sans décimale, signe « - » en tête
+pour les négatifs (`000056232000000` = 56 232 000 000 €). Colonnes : page bilan actif, `m1` brut N,
+`m2` amortissements, `m3` net N, `m4` net N−1 ; page passif, `m1` N, `m2` N−1 ; compte de résultat,
+`m3` N, `m4` N−1 (`m1`/`m2` France/export sur les lignes de ventes). Codes utiles pour un bilan
+d'acquisition (à confirmer sur la notice Cerfa de l'exercice, et citer le code utilisé) :
+`FL` chiffre d'affaires net, `GG` résultat d'exploitation, `HN` résultat de l'exercice, `DL` total
+des capitaux propres, `EC` total des dettes, `DU` emprunts auprès des établissements de crédit,
+`DX` dettes fournisseurs, `DY` dettes fiscales et sociales, `CF` disponibilités, `BT` stock de
+marchandises (net), `CO` total de l'actif. Un code absent de la liasse = « non renseigné », pas zéro.
+
+**Limites** : comptes non confidentiels seulement (une petite société peut avoir opté pour la
+confidentialité du compte de résultat : l'écrire) ; dépôts depuis 2017 ; quota 10 000 appels par
+jour ; licence INPI : pas de rediffusion en masse, retirer tout document marqué `deleted: true`.
+Dans l'app Claude sans outil shell, Arpent ne peut pas appeler cette API : il le dit et demande les
+comptes à l'humain.
+
+**Alternatives privées** (Pappers, Infogreffe/DataInfogreffe, Societe.com) : mêmes données,
+confort en plus, payantes au-delà d'un palier. Si un connecteur de ce type est chargé dans la
+session, Arpent peut s'en servir et cite alors le revendeur comme source, avec la date.

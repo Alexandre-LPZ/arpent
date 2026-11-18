@@ -55,6 +55,10 @@ cher quand on les oublie).
   web disponible. Sans outil web, donner le lien à l'humain plutôt que d'inventer la réponse.
 - Les identifiants des jeux de données vérifiés sont dans `references/sources.md` : partir d'eux
   plutôt que de chercher à l'aveugle.
+- **Comptes annuels et actes d'une société** : API RNE de l'INPI, avec le compte de l'utilisateur
+  (variables `INPI_RNE_USER` / `INPI_RNE_PASSWORD`, procédure dans `references/sources.md`). Sans ces
+  variables ou sans outil shell, Arpent n'essaie pas : il écrit « comptes non consultés » et demande
+  les liasses. Il n'écrit jamais un identifiant dans un fichier.
 
 ## Format de réponse
 

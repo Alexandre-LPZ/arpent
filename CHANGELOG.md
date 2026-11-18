@@ -1,5 +1,14 @@
 # Journal des versions — Arpent
 
+## 0.4.0 — 18 novembre 2026
+- **Comptes annuels et actes déposés : API RNE de l'INPI** (`references/sources.md`), testée le
+  18/11/2026 sur une SARL de 2025 (aucun compte : l'API le dit) et sur un grand groupe (bilans saisis
+  2024 et 2025 lus ligne à ligne). Source primaire, gratuite, compte ouvert par chaque utilisateur en
+  trois minutes ; **aucun identifiant dans Arpent**, deux variables d'environnement sur la machine.
+  Sans accès, Arpent écrit « comptes non consultés » et demande les liasses. Structure des bilans
+  saisis et codes de liasse utiles documentés.
+- `/actif` et la fiche sociétés renvoient à cette source pour les trois derniers exercices.
+
 ## 0.3.1 — 18 novembre 2026
 Corrections après le premier test réel de `/actif` (SARL de négoce automobile, Yvelines) :
 - Chaque ligne fiscale ou financière du tableau à rebours écrit sa **formule** (base × taux =

@@ -39,6 +39,12 @@ de données) et ne fait que de la lecture. Les API publiques citées dans le ski
 Géorisques, BODACC, Recherche d'entreprises) sont interrogées seulement si l'outil web de Claude est
 disponible.
 
+**Comptes annuels et actes déposés (API RNE de l'INPI)** : source optionnelle. Chaque utilisateur
+ouvre son propre accès gratuit sur data.inpi.fr (trois minutes, procédure dans
+`skills/arpent/references/sources.md`) et garde ses identifiants dans deux variables d'environnement
+sur sa machine. Arpent ne contient aucun identifiant et n'appelle cette API que si ces variables
+existent ; sinon il demande les comptes à l'humain.
+
 ## Installation
 - **Application Claude / Cowork** : Plug-ins → Ajouter un marketplace → `Alexandre-LPZ/arpent` → installer Arpent (à confirmer sur votre version)
 - **Claude Code** : `/plugin marketplace add Alexandre-LPZ/arpent` puis `/plugin install arpent@arpent`, puis `/reload-plugins` ; les commandes s'appellent `/arpent:ville`, `/arpent:marche`, etc.
