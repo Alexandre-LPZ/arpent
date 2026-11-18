@@ -1,5 +1,7 @@
 # Arpent — l'immobilier français avec les données publiques
 
+*Français ci-dessous · [English version](#arpent--french-real-estate-and-resale-assets-with-open-public-data)*
+
 **Arpent** est un plug-in Claude pour les professionnels de l'immobilier en France : marchands de
 biens, agents, intermédiaires en succession — et pour tout ce qu'un marchand de biens achète pour
 revendre, immobilier ou non. Il branche Claude sur les données publiques de
@@ -61,5 +63,82 @@ l'installation d'Arpent, qui le fournit.
 - DVF : mise à jour semestrielle, Alsace-Moselle et Mayotte non couvertes.
 - Les règles juridiques évoluent : chaque référence est à vérifier dans sa version en vigueur.
 
+## Sources et référencement
+Arpent est référencé comme **réutilisation sur data.gouv.fr**, rattaché aux jeux de données DVF,
+BODACC, Sirene, cadastre, DPE, comptes INPI et Fonciris :
+https://www.data.gouv.fr/reuses/arpent-limmobilier-et-les-actifs-a-revendre-avec-les-donnees-publiques-plugin-claude
+Le détail de chaque source, ses limites et les procédures testées sont dans
+`skills/arpent/references/sources.md`.
+
 ## Licence
 MIT — voir `LICENSE`. Données : licences de leurs producteurs (Licence Ouverte pour la plupart).
+
+---
+
+# Arpent — French real estate and resale assets with open public data
+
+**Arpent** is a Claude plugin for real-estate professionals in France: property dealers
+(*marchands de biens*), agents, estate intermediaries — and for anything a dealer buys in order to
+resell, property or not. It connects Claude to the French open-data portal **data.gouv.fr** (through
+the official MCP server `https://mcp.data.gouv.fr/mcp`, read-only, no account or key) and teaches it
+the trade's method and the guardrails of French law.
+
+Built with Claude, by a property dealer who wanted to stop hunting for the right data by hand.
+French is the working language of the plugin (the data, the law and the trade are French); this
+section explains what it does for readers who don't read French.
+
+## What it does
+| Command | Use |
+|---|---|
+| `/bilan` | Dealer's deal appraisal: backward method from resale price, VAT on margin, verdict against a 5–15 % margin target |
+| `/actif` | Resale asset outside real estate: company shares, business goodwill (*fonds de commerce*), collector car, artwork, boat — same backward method, realised prices only, class-specific costs and taxes (flagged "to be validated"), deal-killers |
+| `/estimer` | Valuation by DVF comparables (median, quartiles) and a dated **fair-price file** to archive |
+| `/fiche-bien` | Property or parcel sheet: cadastre, planning rules (PLU), hazards (Géorisques), energy rating (DPE), price history |
+| `/ville` | Attractiveness of a municipality: income, accessibility, jobs, market, projects |
+| `/marche` | Reading of a territory's market: buyers', balanced or sellers' market, trend, dated sources, what would invalidate the reading — never a numeric forecast |
+| `/succession` | Framing of an estate file with property or SCI shares: possible outcomes, transparency |
+
+The skill also covers "ready-to-finish" new builds and a table of reference texts (Hoguet law,
+lesion, VAT on margin, ten-year builder's liability, energy-sieve rules…).
+
+## Rules it enforces
+- Figures come from public data, with source and date — never from memory. Missing data is written
+  "not found", never estimated in disguise.
+- The human decides; Arpent computes, compares and alerts.
+- Legal and tax points are flagged with their reference text and sent to the notary, lawyer or
+  accountant. Arpent drafts no deed.
+- No files on private individuals: DVF data is never used to identify a buyer or seller.
+
+## What it runs and sends
+Arpent contains **no script and no hook**. It declares one connector, the public data.gouv.fr MCP
+server, which receives search queries (municipality names, keywords, dataset ids) and only reads.
+The public APIs cited in the skill (cadastre, planning, Géorisques, BODACC, company search) are called
+only when Claude's web tool is available.
+
+**Filed annual accounts and deeds (INPI's RNE API)**: optional source. Each user opens their own free
+access on data.inpi.fr (three minutes, procedure in `skills/arpent/references/sources.md`) and keeps
+their credentials in two environment variables on their machine. Arpent ships no credentials and
+calls this API only when those variables exist; otherwise it asks the human for the accounts. The
+same account, with a separately activated "PI APIs" access, lets Arpent check that a company's
+trademarks, patents and designs are registered in its own name (tested case: holding Renault SA,
+0 trademarks; operating company Renault SAS, 1,216).
+
+## Install
+- **Claude app / Cowork**: Plug-ins → Add a marketplace → `Alexandre-LPZ/arpent` → install Arpent
+  (to be confirmed on your version)
+- **Claude Code**: `/plugin marketplace add Alexandre-LPZ/arpent`, then `/plugin install arpent@arpent`,
+  then `/reload-plugins`; commands are `/arpent:ville`, `/arpent:marche`, etc.
+- Already installed: `/plugin marketplace update arpent`, then `/reload-plugins`.
+
+## Limits
+- France only (data.gouv.fr data). Monaco and abroad: local sources.
+- DVF: updated twice a year; Alsace-Moselle and Mayotte not covered.
+- Legal rules change: every reference is to be checked in its current version.
+
+## Sources and listing
+Arpent is listed as a **reuse on data.gouv.fr**, attached to the DVF, BODACC, Sirene, cadastre, DPE,
+INPI accounts and Fonciris datasets:
+https://www.data.gouv.fr/reuses/arpent-limmobilier-et-les-actifs-a-revendre-avec-les-donnees-publiques-plugin-claude
+
+## License
+MIT — see `LICENSE`. Data: the producers' licences (mostly the French *Licence Ouverte*).

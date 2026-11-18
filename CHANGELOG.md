@@ -1,5 +1,9 @@
 # Journal des versions — Arpent
 
+## 0.5.2 — 18 novembre 2026
+- README bilingue (français, puis anglais complet) et lien vers la fiche de réutilisation
+  data.gouv.fr (9 jeux de données rattachés).
+
 ## 0.5.1 — 18 novembre 2026
 - Procédure d'activation de la passerelle PI précisée d'après l'email reçu (intitulé, expéditeur,
   page « réinitialisation » qui sert à définir le mot de passe, contact INPI).
