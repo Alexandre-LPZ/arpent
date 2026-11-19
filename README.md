@@ -15,7 +15,7 @@ la main.
 ## Ce qu'il fait
 | Commande | Usage |
 |---|---|
-| `/bilan` | Bilan d'opération de marchand de biens : méthode à rebours, TVA sur marge, **fiches de terrain** habitation et commerces/bureaux (8 questions du professionnel, réponses A–D, effets chiffrés), étiquettes pièce vérifiée / déclaré / hypothèse / manquant, verdict GO / À SÉCURISER / NO GO |
+| `/bilan` | Bilan d'opération de marchand de biens : méthode à rebours, TVA sur marge, **fiches de terrain** habitation, commerces/bureaux et parts/fonds (`/actif`) (8 questions du professionnel, réponses A–D, effets chiffrés), étiquettes pièce vérifiée / déclaré / hypothèse / manquant, verdict GO / À SÉCURISER / NO GO |
 | `/actif` | Actif à revendre hors immobilier : parts de société, fonds de commerce, véhicule de collection, œuvre, bateau — même méthode à rebours, prix réalisés, frais et fiscalité de la classe (à valider), ce qui tue l'opération |
 | `/estimer` | Estimation par comparables DVF (médiane, quartiles) et **dossier de prix juste** daté à archiver |
 | `/fiche-bien` | Fiche d'un bien ou d'une parcelle en six thèmes : parcelle et propriétaire (personne morale), bâti, contraintes (PLU, abords ABF, risques, carrières), environnement (fibre, antennes), projets, prix — et où chercher ce que le public ne donne pas |
@@ -90,7 +90,7 @@ section explains what it does for readers who don't read French.
 ## What it does
 | Command | Use |
 |---|---|
-| `/bilan` | Dealer's deal appraisal: backward method from resale price, VAT on margin, **field sheets** for housing and for shops/offices (8 questions answered by the professional, A–D, with quantified effects), every line tagged verified document / declared / assumption / missing, verdict GO / SECURE-RENEGOTIATE / NO GO |
+| `/bilan` | Dealer's deal appraisal: backward method from resale price, VAT on margin, **field sheets** for housing, shops/offices and company shares/goodwill (`/actif`) (8 questions answered by the professional, A–D, with quantified effects), every line tagged verified document / declared / assumption / missing, verdict GO / SECURE-RENEGOTIATE / NO GO |
 | `/actif` | Resale asset outside real estate: company shares, business goodwill (*fonds de commerce*), collector car, artwork, boat — same backward method, realised prices only, class-specific costs and taxes (flagged "to be validated"), deal-killers |
 | `/estimer` | Valuation by DVF comparables (median, quartiles) and a dated **fair-price file** to archive |
 | `/fiche-bien` | Property or parcel sheet in six themes: parcel and owner (legal entities only), building, constraints (PLU, heritage-protection perimeters, hazards, quarries), surroundings (fibre, cell towers), projects, prices — and where to look for what open data does not give |

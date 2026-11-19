@@ -19,7 +19,9 @@ professionnel, jamais de fiche sur un particulier.
    comparables, le dire et élargir la fenêtre de temps avant d'élargir la définition du comparable.
 2. **Moins la fiscalité de la revente** selon la classe (voir plus bas, chacune « à valider »).
 3. **Moins la remise en état** + aléas (10 % minimum ; 20 % quand l'état intérieur n'a pas été vu :
-   mécanique, coque, restauration).
+   mécanique, coque, restauration). Pour des **parts ou un fonds**, pas d'aléa forfaitaire sur des
+   comptes non vus : un risque **inconnu** ne se provisionne pas pour faire passer l'opération, il
+   s'écrit « manquant » et appelle l'audit ou l'abandon (`terrain-parts-fonds.md`).
 4. **Moins les frais** : acquisition (droits d'enregistrement ou commission d'enchères, acheteur
    **et** vendeur), expertise et authentification, transport, assurance, stockage ou gardiennage
    pendant le portage, frais de vente (commission, catalogue), frais financiers.
@@ -41,6 +43,9 @@ bilan.
 
 ## Par classe d'actif — sources, frais, ce qui tue l'opération
 ### Parts de société, fonds de commerce
+Fiche de terrain du professionnel : **`terrain-parts-fonds.md`** (fonds ≠ parts, huit questions
+d'avant-signature, levier de correction pour chaque réponse défavorable, tableau et grille).
+
 | | |
 |---|---|
 | Sources de prix et d'état | comptes déposés (3 derniers exercices) : **API RNE de l'INPI** si l'utilisateur a son accès (procédure et codes de liasse dans `sources.md`), sinon demandés à l'humain ; actes déposés (statuts, PV, clauses d'agrément) par la même API ; titres de propriété industrielle au nom de la société : API PI de l'INPI (`sources.md`) ; BODACC (cessions de fonds, modifications de capital, procédures collectives) ; Sirene (établissements, effectifs par tranche) ; baux et contrats fournis par le vendeur |

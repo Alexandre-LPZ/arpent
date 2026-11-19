@@ -1,5 +1,17 @@
 # Journal des versions — Arpent
 
+## 0.7.2 — 19 novembre 2026 — fiche de terrain, classe 3 : parts de société et fonds de commerce
+- Nouvelle fiche `references/terrain-parts-fonds.md`, dictée par le marchand : fonds ≠ parts (tableau),
+  trois valeurs à ne pas confondre (comptable, exploitation, revente), huit questions d'avant-signature
+  (périmètre transféré, rentabilité reproductible, trésorerie à financer, continuité dès le lendemain,
+  équipe et engagements sociaux, investissements de maintien, garanties mobilisables, sortie et
+  durée), et pour chaque réponse défavorable **le levier** : baisse de prix, provision, garantie,
+  délai, ou impossible.
+- Règle nouvelle, appliquée aussi dans `actif.md` : **le risque inconnu ne se provisionne pas** pour
+  faire passer l'opération ; il s'écrit « manquant » et appelle l'audit ou l'abandon. Fin de l'aléa
+  forfaitaire « comptes non vus » sur les parts et les fonds.
+- `/actif` lit la fiche quand ses réponses sont dans le message.
+
 ## 0.7.1 — 19 novembre 2026 — fiche de terrain, classe 2 : commerces et bureaux
 - Nouvelle fiche `references/terrain-commerces-bureaux.md`, dictée par le marchand : commerce et
   bureau lus séparément (ce qui fait la valeur, ce qu'on regarde sur place, contraintes propres,
