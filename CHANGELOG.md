@@ -1,5 +1,10 @@
 # Journal des versions — Arpent
 
+## 0.6.1 — 19 novembre 2026
+- **BDNB testée** : l'API Open ne demande ni compte ni clé (10 000 appels/mois/IP). Géocodage puis
+  données par clé BAN ; champs utiles et limites de couverture documentés sur deux adresses réelles.
+  La 0.6.0 disait « compte gratuit requis » : c'était faux, corrigé.
+
 ## 0.6.0 — 19 novembre 2026 — « le bâti et son environnement »
 Issue de la revue de 38 « sites pratiques » d'un architecte : 5 sources publiques retenues, les
 autres écartées ou renvoyées au professionnel (`fiche-bien.md`, colonne « où chercher »).

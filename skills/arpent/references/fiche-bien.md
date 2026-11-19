@@ -15,9 +15,9 @@ quels travaux, quel délai). Ce que les données publiques ne donnent pas est é
 
 ## 2. Bâti
 - **Ce que le bâti est** : année de construction, matériaux, hauteur, nombre de logements, DPE
-  rattachés. Source : **BDNB** (CSTB) si l'utilisateur a son accès (`sources.md`) ; sinon, l'année et
-  la surface apparaissent souvent dans les DPE de l'adresse (ADEME). Sans l'un ni l'autre : « bâti :
-  non documenté, à relever sur place ».
+  rattachés. Source : **API BDNB Open** (CSTB, sans clé, `sources.md`) ; un champ vide s'écrit « non
+  renseigné (BDNB) ». En complément, l'année et la surface apparaissent souvent dans les DPE de
+  l'adresse (ADEME). Sans rien : « bâti : non documenté, à relever sur place ».
 - **État** : pas de donnée publique. Trois niveaux à faire déclarer par le professionnel (coup de
   frais / rénovation / lourd) et un montant de travaux **par devis**, jamais par ratio. Étiquette
   « déclaré, visite du … ».

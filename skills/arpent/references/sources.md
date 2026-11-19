@@ -70,7 +70,7 @@ directrice, non audité).
 | **Propriétaire personne morale** (société, SCI, collectivité, État) | Fichier des parcelles des personnes morales (DGFiP), version unifiée parquet | `6900772ca5c4fa6c5687b3bd` |
 | **Fibre à l'adresse / dans la commune** | ARCEP « Ma connexion internet » | `5e836644ca07c8558d91a6fc` |
 | **Antennes relais (supports, hauteur, type)** | ANFR, installations radioélectriques > 5 W | `551d4ff3c751df55da0cd89f` |
-| **Bâti : année, matériaux, hauteur, DPE rattachés** | BDNB (CSTB) — API, compte gratuit | `61dc7157488f8cdb4283e3c3` |
+| **Bâti : année, matériaux, hauteur, DPE rattachés** | API BDNB Open (CSTB), sans clé, 10 000 appels/mois/IP | `61dc7157488f8cdb4283e3c3` |
 
 ### Servitudes AC1 / AC4 (abords de monuments, sites patrimoniaux) — testé le 19/11/2026
 API Carto GPU, `GET https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=<GeoJSON Point>` → chaque
@@ -116,19 +116,27 @@ Chesnay-Trianon 47, SCI des Peupliers 39, bailleurs sociaux…). Une parcelle ab
 appartient à une personne physique : **on s'arrête là** (règle 4). Dire le millésime (situation au
 1er janvier).
 
-### Bâti — BDNB du CSTB (accès vérifié le 19/11/2026, appels non testés)
-Les exports complets font 37 à 48 Go : inutilisables. La voie, c'est l'**API BDNB Open**
-(`https://api.bdnb.io/v1/bdnb`) : compte gratuit sur `api-portail.bdnb.io`, 10 000 appels par mois,
-interrogation par adresse (clé BAN), parcelle ou identifiant de bâtiment ; donne année de
-construction, matériaux, hauteur, nombre de logements, DPE rattachés. Même règle que l'INPI :
-l'utilisateur ouvre son compte, garde sa clé dans une variable d'environnement (`BDNB_API_KEY`),
-rien dans le dépôt ; sans la variable, Arpent écrit « bâti : non documenté » et se rabat sur les DPE
-ADEME (année et surface quand le DPE les porte). **Les appels, les champs et le format de la clé
-restent à tester avec un compte** : ne pas les inventer, lire le Swagger du portail une fois connecté.
-
-Si une API publique est injoignable depuis l'environnement (cas vu le 18/11/2026 : Géorisques
-depuis Claude Code sur un poste Windows), Arpent écrit « non vérifié (service injoignable) » et
-donne le lien à l'humain ; il ne remplace jamais le résultat par un souvenir.
+### Bâti — API BDNB Open du CSTB (testée le 19/11/2026, sans compte ni clé)
+Les exports complets font 37 à 48 Go : inutilisables. L'**API BDNB Open** suffit : niveau « ouvert,
+pas de souscription », **10 000 appels par mois et par adresse IP, 120 par minute, 10 objets par
+requête au maximum**. Base `https://api.bdnb.io/v1/bdnb`. Deux appels :
+1. `GET /geocodage?q=<adresse>` → `features[0].properties.id` = clé d'interopérabilité BAN
+   (ex. `78158_1110_00177` pour 177 rue de Versailles, Le Chesnay) et le score.
+2. `GET /donnees/batiment_groupe_complet/adresse?cle_interop_adr=eq.<clé>&limit=5` → une liste de
+   groupes de bâtiments, 152 champs chacun. Utiles : `annee_construction`, `mat_mur_txt`,
+   `mat_toit_txt`, `hauteur_mean` (m) et `fiabilite_hauteur`, `nb_niveau`, `nb_log`,
+   `usage_niveau_1_txt` (résidentiel / tertiaire), `s_geom_groupe` (emprise au sol, m²),
+   `classe_bilan_dpe` et `nb_classe_bilan_dpe_a…g` (répartition des DPE du groupe),
+   `l_denomination_proprietaire` (personnes morales seulement), `denomination_monument_historique`
+   (monument à proximité). Même route par parcelle (`/parcelle`), par identifiant RNB (`/rnb`) ou par
+   boîte englobante (`/bbox`). Métadonnées des champs : `GET /metadonnees`.
+Cas vérifiés : hôpital, 177 rue de Versailles → emprise 23 777 m², hauteur 12 m, 3 niveaux, année
+2008, propriétaire « Centre hospitalier de Versailles », monument proche « château (ancien) » ;
+9 rue Potier (Parly 2) → 2 groupes, année et matériaux **non renseignés**, propriétaire commune pour
+l'un, aucun pour l'autre. **Limites** : la couverture est inégale (beaucoup de `INDETERMINE` et de
+`None` sur le résidentiel privé) ; les propriétaires personnes physiques n'y sont jamais (tant mieux,
+règle 4) ; un champ vide s'écrit « non renseigné (BDNB) », pas zéro. Sans réponse, repli sur les DPE
+ADEME (année et surface quand le DPE les porte).
 
 ## Territoire
 | Donnée | Source | Accès |
