@@ -35,6 +35,7 @@ cher quand on les oublie).
 | Besoin | Fiche à lire | Commande |
 |---|---|---|
 | Rentabilité d'une opération de marchand de biens | `references/marchand.md` | `/bilan` |
+| Fiche de terrain habitation : 8 questions du professionnel, étiquettes, grille GO / À SÉCURISER / NO GO | `references/terrain-habitation.md` | (avec `/bilan`) |
 | Actif à revendre hors immobilier (parts, fonds, véhicule, œuvre, bateau) | `references/actif.md` | `/actif` |
 | Prix d'un bien, comparables, dossier de prix juste | `references/estimation.md` | `/estimer` |
 | Lire le vendeur (A/B/C), les annonces, le mandat exclusif | `references/vendeur.md` | — |

@@ -20,6 +20,17 @@
 Présenter le bilan en tableau ligne à ligne, chaque montant avec son origine (devis, estimation,
 donnée publique, hypothèse). Une hypothèse s'écrit « hypothèse », jamais comme un fait.
 
+## La fiche de terrain (ce que seul le professionnel sait)
+Pour une habitation à rénover et revendre, lire **`terrain-habitation.md`** : huit questions
+dictées par le marchand (prix de sortie, état, configuration, obstacles, occupation, défauts,
+calendrier, marge), chacune avec ses réponses A à D et ce que chacune change dans le calcul ; les
+quatre étiquettes (pièce vérifiée / déclaré / hypothèse / manquant) ; le tableau à rebours
+opérationnel ; et la **grille de décision** GO / À SÉCURISER / NO GO, qui s'arrête à la première
+réponse bloquante et ne fait jamais de moyenne. Si le professionnel n'a pas rempli la fiche, le bilan
+se termine par les questions sans réponse et ce qu'une réponse défavorable changerait. Les autres
+classes d'actif (`actif.md`) auront leur fiche ; en attendant, les quatre étiquettes s'appliquent
+partout.
+
 ## Règles maison (fixées par le marchand, à appliquer telles quelles)
 - **Division : le vendeur fait la division avant la vente.** Le marchand finance les démarches
   (géomètre, déclaration préalable ou permis d'aménager, permis de construire), puis achète le bien

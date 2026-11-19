@@ -1,5 +1,19 @@
 # Journal des versions — Arpent
 
+## 0.7.0 — 19 novembre 2026 — fiche de terrain, classe 1 : habitation
+- Nouvelle fiche `references/terrain-habitation.md`, **dictée par le marchand de biens** : huit
+  questions (prix de sortie, état et travaux, configuration, obstacles juridiques, occupation,
+  défauts à la revente, calendrier jusqu'à l'encaissement, marge et capital), réponses A à D et ce
+  que chacune change dans le calcul.
+- Quatre étiquettes obligatoires sur chaque ligne d'un bilan : **pièce vérifiée / déclaré /
+  hypothèse / manquant**. Une date de visite ne transforme pas une déclaration en fait.
+- Tableau à rebours opérationnel (revente HT, TVA traitée à part, scénarios central et prudent,
+  capital immobilisé) et **grille de décision** GO / À SÉCURISER-RENÉGOCIER / NO GO : première
+  réponse bloquante, jamais de moyenne. La marge se définit en euros ; la cible 5–15 % devient un
+  contrôle.
+- `/bilan` lit la fiche si elle est dans le message, sinon termine par les questions sans réponse.
+- `sources.md` : conseil d'installation de pyarrow quand il manque (vu au test du 19/11).
+
 ## 0.6.1 — 19 novembre 2026
 - **BDNB testée** : l'API Open ne demande ni compte ni clé (10 000 appels/mois/IP). Géocodage puis
   données par clé BAN ; champs utiles et limites de couverture documentés sur deux adresses réelles.

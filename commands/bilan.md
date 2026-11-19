@@ -1,9 +1,14 @@
 ---
-description: Bilan d'opération de marchand de biens — prix d'achat maximal, TVA sur marge, verdict par rapport à la cible de 5 à 15 %
+description: Bilan d'opération de marchand de biens — prix d'achat maximal, TVA sur marge, fiche de terrain (8 questions du professionnel), verdict GO / À SÉCURISER / NO GO
 ---
-Avec le skill `arpent`, lis `references/marchand.md` puis établis le bilan de cette opération : $ARGUMENTS
+Avec le skill `arpent`, lis `references/marchand.md` puis, pour une habitation, `references/terrain-habitation.md`,
+et établis le bilan de cette opération : $ARGUMENTS
 
-Méthode à rebours, tableau ligne à ligne, chaque montant avec son origine (donnée publique, devis,
-hypothèse). Prix de revente tiré des comparables DVF. Termine par le verdict par rapport à la cible
-(5 à 15 %, plancher 5 %), les risques qui peuvent tuer l'opération, et ce qui manque pour trancher.
-S'il manque une donnée indispensable (prix demandé, surface, budget travaux), pose une seule question.
+Méthode à rebours, tableau ligne à ligne, chaque montant avec son **étiquette** (pièce vérifiée /
+déclaré / hypothèse / manquant) et son origine (formule, pièce, date). Prix de revente tiré des
+comparables DVF, en HT selon le régime fiscal réel. Si les réponses à la fiche de terrain sont dans le
+message (Q1 à Q8, lettre + mot, date de visite), les appliquer ; sinon, faire le bilan avec les données
+publiques et terminer par les questions sans réponse, chacune avec ce qu'une réponse défavorable
+changerait. Verdict en une ligne, en tête, par la grille de décision (première réponse bloquante),
+puis la cible maison (5 à 15 %) en contrôle, les risques qui tuent l'opération, et ce qui manque.
+S'il manque une donnée indispensable (prix demandé, surface), pose une seule question.

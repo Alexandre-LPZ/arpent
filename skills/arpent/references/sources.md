@@ -108,7 +108,8 @@ Arpent écrit la distance, la hauteur et la nature ; **aucun jugement sanitaire*
 Fichiers officiels : `605d268f4661cf23272817c3` (zips par millésime, lourds, téléchargement parfois
 coupé). Version unifiée par la communauté, plus pratique : `6900772ca5c4fa6c5687b3bd`,
 `parcelles_personnes_morales_<année>.parquet` (2025 : 376 Mo, 21 M de lignes, lecture avec un
-filtre `code_insee`, pyarrow suffit). Colonnes : `code_insee`, `section`, `numero_parcelle`,
+filtre `code_insee`, pyarrow suffit ; s'il manque : `pip install pyarrow`, à proposer à l'humain, pas
+à exécuter sans accord). Colonnes : `code_insee`, `section`, `numero_parcelle`,
 `prefixe`, `numero_siren`, `denomination`, `forme_juridique_abregee`, `code_droit_libelle`
 (propriétaire, usufruitier…), `numero_voirie`, `nom_voie`, `contenance_parcelle_centiare`. Cas
 vérifié : 972 parcelles de personnes morales à 78158 (commune 162, État 54, syndicat de copropriété
