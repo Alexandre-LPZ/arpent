@@ -1,8 +1,9 @@
 ---
 description: Bilan d'opération de marchand de biens — prix d'achat maximal, TVA sur marge, fiche de terrain (8 questions du professionnel), verdict GO / À SÉCURISER / NO GO
 ---
-Avec le skill `arpent`, lis `references/marchand.md` puis, pour une habitation, `references/terrain-habitation.md`,
-et établis le bilan de cette opération : $ARGUMENTS
+Avec le skill `arpent`, lis `references/marchand.md` puis, pour une habitation,
+`references/terrain-habitation.md`, pour un local commercial ou un bureau,
+`references/terrain-commerces-bureaux.md`, et établis le bilan de cette opération : $ARGUMENTS
 
 Méthode à rebours, tableau ligne à ligne, chaque montant avec son **étiquette** (pièce vérifiée /
 déclaré / hypothèse / manquant) et son origine (formule, pièce, date). Prix de revente tiré des

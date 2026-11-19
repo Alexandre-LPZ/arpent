@@ -1,5 +1,16 @@
 # Journal des versions — Arpent
 
+## 0.7.1 — 19 novembre 2026 — fiche de terrain, classe 2 : commerces et bureaux
+- Nouvelle fiche `references/terrain-commerces-bureaux.md`, dictée par le marchand : commerce et
+  bureau lus séparément (ce qui fait la valeur, ce qu'on regarde sur place, contraintes propres,
+  ce que le public donne), huit questions avec **effets chiffrés** (décotes bornées, délais, imprévus),
+  deux valeurs de sortie (utilisateur sur ventes signées / investisseur = revenu net ÷ rendement),
+  tableau à rebours à deux colonnes, grille de décision, les trois pièges (décote ≠ opportunité,
+  loyer artificiel, transformation spéculative). Pas de score additionné : des paramètres.
+- Classe 1 : Q8 se donne en euros (la lettre se déduit du calcul) ; décote Q6 = C bornée à 5–10 %.
+- `reglementation.md` : la lésion s'apprécie sur la valeur du bien dans son état, pas rénové (vu
+  au test du 19/11).
+
 ## 0.7.0 — 19 novembre 2026 — fiche de terrain, classe 1 : habitation
 - Nouvelle fiche `references/terrain-habitation.md`, **dictée par le marchand de biens** : huit
   questions (prix de sortie, état et travaux, configuration, obstacles juridiques, occupation,

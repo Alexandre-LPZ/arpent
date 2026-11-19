@@ -7,7 +7,7 @@ avec le professionnel indiqué. Arpent signale ; il ne tranche pas.
 |---|---|---|---|
 | Transaction pour autrui | Toucher une rémunération liée à une vente immobilière exige la carte professionnelle « transaction » | Loi n° 70-9 du 2 janvier 1970 (loi Hoguet) et son décret d'application | Avocat, CCI |
 | Conseil juridique | Donner des consultations juridiques contre rémunération est réservé à certaines professions | Loi n° 71-1130 du 31 décembre 1971, titre II | Avocat |
-| Lésion dans la vente | Le vendeur d'un immeuble lésé de plus des 7/12 peut demander l'annulation, dans un délai de deux ans | Code civil, art. 1674 à 1685 | Notaire |
+| Lésion dans la vente | Le vendeur d'un immeuble lésé de plus des 7/12 peut demander l'annulation, dans un délai de deux ans. La lésion s'apprécie sur la valeur du bien **dans son état au jour de la vente** (occupé, à rénover), pas sur sa valeur une fois rénové : un prix d'achat bas par rapport au bien fini n'est pas en soi lésionnaire | Code civil, art. 1674 à 1685 | Notaire |
 | Lésion dans le partage | Un copartageant lésé de plus du quart peut obtenir un complément de part | Code civil, art. 889 | Notaire |
 | TVA sur marge | Régime de la revente d'immeubles et de terrains à bâtir ; conditions d'application contrôlées par l'administration | CGI, art. 268 ; BOFiP | Expert-comptable |
 | Droits de mutation du marchand | Régime de faveur contre engagement de revendre dans un délai légal | CGI, art. 1115 | Notaire |

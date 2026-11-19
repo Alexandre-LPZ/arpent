@@ -80,7 +80,7 @@ Règle : le délai de libération conditionne le financement, les travaux et la 
 |---|---|---|
 | A | aucun défaut rédhibitoire | rien |
 | B | corrigeables : décoration, distribution, luminosité améliorable | **budget correctif** (dans Q2) |
-| C | permanents : nuisances, vis-à-vis, étage défavorable, pas d'extérieur ou de stationnement selon le marché | **décote sur le prix de sortie** (Q1) et délai de commercialisation allongé (Q7) |
+| C | permanents : nuisances, vis-à-vis, étage défavorable, pas d'extérieur ou de stationnement selon le marché | **décote sur le prix de sortie** de **5 à 10 %** (hypothèse, afficher les deux bornes) et délai de commercialisation allongé (Q7) |
 | D | majeurs : accès problématique, environnement dégradé, exposition forte à un risque, produit difficilement commercialisable | **forte décote ou NO GO** |
 Règle : un bien magnifiquement rénové reste un bien mal situé si l'emplacement est mauvais. Les
 données publiques aident ici (`fiche-bien.md` : antennes, bruit, risques, usage passé du site) ; le
@@ -104,7 +104,8 @@ Règle : on compte **jusqu'à l'encaissement chez le notaire**, pas jusqu'à la 
 | C | marge insuffisante au prix demandé, négociation possible | **offre plafonnée au prix d'achat maximal** calculé |
 | D | marge négative, risque disproportionné, financement non sécurisé | **NO GO** |
 Règle : la marge est définie **en euros**, avec sa base de calcul et son niveau (avant ou après impôt
-sur les bénéfices). Pas de pourcentage universel sans connaître le risque et la durée ; la cible
+sur les bénéfices) ; **Q8 se donne donc en euros, et la lettre se déduit du calcul** : Arpent ne la
+choisit pas à la place du professionnel, il dit « le calcul tombe en C / en D ». Pas de pourcentage universel sans connaître le risque et la durée ; la cible
 maison de `marchand.md` (5 à 15 %) sert de **contrôle**, pas de règle.
 
 ## Le calcul à rebours, rendu opérationnel

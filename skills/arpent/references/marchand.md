@@ -27,9 +27,10 @@ calendrier, marge), chacune avec ses réponses A à D et ce que chacune change d
 quatre étiquettes (pièce vérifiée / déclaré / hypothèse / manquant) ; le tableau à rebours
 opérationnel ; et la **grille de décision** GO / À SÉCURISER / NO GO, qui s'arrête à la première
 réponse bloquante et ne fait jamais de moyenne. Si le professionnel n'a pas rempli la fiche, le bilan
-se termine par les questions sans réponse et ce qu'une réponse défavorable changerait. Les autres
-classes d'actif (`actif.md`) auront leur fiche ; en attendant, les quatre étiquettes s'appliquent
-partout.
+se termine par les questions sans réponse et ce qu'une réponse défavorable changerait. Pour un **local commercial ou un bureau**, lire **`terrain-commerces-bureaux.md`** : même
+mécanique, deux lectures (commerce / bureau), deux valeurs de sortie (utilisateur / investisseur),
+effets chiffrés par réponse, trois pièges. Les autres classes d'actif (`actif.md`) auront leur
+fiche ; en attendant, les quatre étiquettes s'appliquent partout.
 
 ## Règles maison (fixées par le marchand, à appliquer telles quelles)
 - **Division : le vendeur fait la division avant la vente.** Le marchand finance les démarches
