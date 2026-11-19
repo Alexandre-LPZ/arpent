@@ -1,5 +1,21 @@
 # Journal des versions — Arpent
 
+## 0.8.0 — 19 novembre 2026 — les six fiches de terrain
+- Trois nouvelles fiches dictées par le marchand : `terrain-vehicules.md` (liquidité du modèle,
+  historique, état réel, configuration, cessibilité et import, canal, durée, stress test),
+  `terrain-oeuvres.md` (marché secondaire pour ce type d'œuvre, représentativité, conservation,
+  circulation et biens culturels, canal et net vendeur, solidité du prix, détention, net en scénario
+  défavorable), `terrain-bateaux.md` (marché, état au-delà de l'apparence, obsolescence, juridique et
+  TVA historique, garde et déplacement, coûts de détention, commercialisation, stress test à six mois).
+- `terrain-regles.md`, règles communes aux six classes : une information manquante n'est jamais un A ;
+  un défaut chiffrable réduit le prix et modifie frais, imprévus ou délai ; un blocage non résolu
+  suspend l'engagement, une baisse de prix ne le supprime pas ; le GO se conditionne à la marge en
+  euros, à la liquidité et à la trésorerie. **Quatre verdicts** : GO, À SÉCURISER / RENÉGOCIER,
+  **NO GO en l'état** (réexaminable après pièce, expertise ou régularisation), **NO GO définitif**.
+  Chaque question doit modifier une variable du tableau à rebours ou produire un blocage, sinon elle
+  sort de la fiche.
+- Les trois premières fiches et `/bilan`, `/actif` renvoient aux règles communes.
+
 ## 0.7.2 — 19 novembre 2026 — fiche de terrain, classe 3 : parts de société et fonds de commerce
 - Nouvelle fiche `references/terrain-parts-fonds.md`, dictée par le marchand : fonds ≠ parts (tableau),
   trois valeurs à ne pas confondre (comptable, exploitation, revente), huit questions d'avant-signature

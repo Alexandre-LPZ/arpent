@@ -140,6 +140,7 @@ du calcul, Arpent ne la choisit pas.
 Le verdict se lit sur la **plus basse** des deux colonnes de sortie et sur le **scénario prudent**.
 
 ## Grille de décision (première réponse bloquante, pas de moyenne)
+Quatre verdicts, dont **NO GO en l'état** (réexaminable) distinct du **NO GO définitif** : `terrain-regles.md`.
 | Si… | Verdict |
 |---|---|
 | Q1 = D sans autre usage démontré ; Q2 = D ; Q3 = D ; Q4 = D ; Q5 = D ; Q7 = D ; Q8 = D | **NO GO** |

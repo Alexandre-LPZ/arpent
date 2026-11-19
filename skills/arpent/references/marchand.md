@@ -21,6 +21,8 @@ Présenter le bilan en tableau ligne à ligne, chaque montant avec son origine (
 donnée publique, hypothèse). Une hypothèse s'écrit « hypothèse », jamais comme un fait.
 
 ## La fiche de terrain (ce que seul le professionnel sait)
+Règles communes aux six classes, étiquettes et quatre verdicts (GO / À SÉCURISER / NO GO en l'état /
+NO GO définitif) : **`terrain-regles.md`**, à lire avec toute fiche.
 Pour une habitation à rénover et revendre, lire **`terrain-habitation.md`** : huit questions
 dictées par le marchand (prix de sortie, état, configuration, obstacles, occupation, défauts,
 calendrier, marge), chacune avec ses réponses A à D et ce que chacune change dans le calcul ; les

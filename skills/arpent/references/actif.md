@@ -55,6 +55,8 @@ d'avant-signature, levier de correction pour chaque réponse défavorable, table
 | Tue l'opération | dette fiscale ou sociale non provisionnée ; bail qui expire sans droit au renouvellement ; un client > 40 % du chiffre ; procédure collective en cours (BODACC) ; dirigeant indispensable qui part ; **marque, brevet ou modèle exploités mais déposés au nom du dirigeant ou d'une autre société du groupe** (à vérifier par SIREN avec l'API PI, `sources.md`) : on achète alors des parts sans ce qui fait leur valeur |
 
 ### Véhicules de collection
+Fiche de terrain : **`terrain-vehicules.md`** (liquidité, historique, état, configuration, cessibilité, canal, durée, stress test).
+
 | | |
 |---|---|
 | Sources de prix | **résultats** de ventes aux enchères (Artcurial, Aguttes, Bonhams, RM Sotheby's, Osenat : résultats publiés) ; cotes spécialisées (à citer comme cote, pas comme vente) ; annonces = prix demandés, pas des comparables |
@@ -64,6 +66,8 @@ d'avant-signature, levier de correction pour chaque réponse défavorable, table
 | Tue l'opération | provenance incertaine (gage, vol, document manquant) ; numéros non concordants ; restauration lourde non chiffrée ; marché de niche sans comparables récents |
 
 ### Œuvres d'art et objets de collection
+Fiche de terrain : **`terrain-oeuvres.md`** (marché secondaire, représentativité, conservation, circulation, canal, solidité du prix, détention, net en scénario défavorable).
+
 | | |
 |---|---|
 | Sources de prix | résultats d'enchères (Drouot, Artcurial, Christie's, Sotheby's ; bases Artprice/Artnet, payantes) ; une estimation de catalogue n'est pas un résultat |
@@ -73,6 +77,8 @@ d'avant-signature, levier de correction pour chaque réponse défavorable, table
 | Tue l'opération | authenticité non établie ; bien culturel soumis à restriction de sortie ; litige de provenance (spoliation) ; œuvre invendue récemment aux enchères (« ravalée ») |
 
 ### Bateaux
+Fiche de terrain : **`terrain-bateaux.md`** (marché, état au-delà de l'apparence, obsolescence, situation juridique et TVA, garde et déplacement, coûts de détention, commercialisation, stress test à six mois).
+
 | | |
 |---|---|
 | Sources de prix | ventes réalisées par courtiers et enchères (Domaines, ventes judiciaires) ; annonces = prix demandés |

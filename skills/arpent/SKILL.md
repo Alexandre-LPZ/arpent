@@ -38,6 +38,8 @@ cher quand on les oublie).
 | Fiche de terrain habitation : 8 questions du professionnel, étiquettes, grille GO / À SÉCURISER / NO GO | `references/terrain-habitation.md` | (avec `/bilan`) |
 | Fiche de terrain commerces et bureaux : emplacement n°1/1 bis/2, valeur utilisateur / investisseur, bail, transformation | `references/terrain-commerces-bureaux.md` | (avec `/bilan`) |
 | Fiche de terrain parts de société et fonds de commerce : périmètre, rentabilité reproductible, trésorerie, continuité, équipe, investissements, garanties, sortie | `references/terrain-parts-fonds.md` | (avec `/actif`) |
+| Fiches de terrain véhicules, œuvres, bateaux | `references/terrain-vehicules.md`, `terrain-oeuvres.md`, `terrain-bateaux.md` | (avec `/actif`) |
+| Règles communes des fiches : étiquettes, quatre verdicts (GO / À SÉCURISER / NO GO en l'état / NO GO définitif), discipline des questions | `references/terrain-regles.md` | — |
 | Actif à revendre hors immobilier (parts, fonds, véhicule, œuvre, bateau) | `references/actif.md` | `/actif` |
 | Prix d'un bien, comparables, dossier de prix juste | `references/estimation.md` | `/estimer` |
 | Lire le vendeur (A/B/C), les annonces, le mandat exclusif | `references/vendeur.md` | — |

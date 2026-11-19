@@ -152,6 +152,8 @@ pas le métier.
 Ligne **« manquant »** = pas de verdict GO possible : le tableau le dit en toutes lettres.
 
 ## Grille de décision (première réponse bloquante, pas de moyenne)
+Quatre verdicts, dont **NO GO en l'état** (pièce, audit ou régularisation possible) distinct du **NO GO
+définitif** : `terrain-regles.md`.
 | Si… | Verdict |
 |---|---|
 | Q1 = D ; Q2 = D sans stratégie d'actif ; Q3 = D ; Q4 = D ; Q5 = D ; Q6 = D sans autre valeur démontrée ; Q7 = D ; Q8 = D | **NO GO** : transfert impossible, continuité compromise, pertes incontrôlées, risque non sécurisable, pas de sortie rentable |

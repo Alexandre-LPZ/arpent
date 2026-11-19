@@ -133,7 +133,9 @@ Deux colonnes de scénario quand Q1 = B ou Q8 = B : **central** et **prudent**. 
 le prudent.
 
 ## Grille de décision finale
-Pas de moyenne. On lit les réponses dans l'ordre et on s'arrête à la première qui bloque.
+Pas de moyenne. On lit les réponses dans l'ordre et on s'arrête à la première qui bloque. Règles
+communes et quatre verdicts (dont **NO GO en l'état**, réexaminable après pièce, expertise ou
+régularisation, distinct du **NO GO définitif**) : `terrain-regles.md`.
 
 | Si… | Verdict |
 |---|---|
