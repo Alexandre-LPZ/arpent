@@ -1,5 +1,9 @@
 # Journal des versions — Arpent
 
+## 0.8.1 — 19 novembre 2026
+- Livrables : tout résultat à conserver ou transmettre sort **en Markdown (source, pour l'humain et
+  l'IA) et en PDF (envoi)**, Word seulement si un tiers doit modifier ; nommage des fichiers.
+
 ## 0.8.0 — 19 novembre 2026 — les six fiches de terrain
 - Trois nouvelles fiches dictées par le marchand : `terrain-vehicules.md` (liquidité du modèle,
   historique, état réel, configuration, cessibilité et import, canal, durée, stress test),

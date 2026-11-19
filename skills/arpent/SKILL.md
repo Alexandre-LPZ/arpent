@@ -72,3 +72,13 @@ cher quand on les oublie).
 2. **Les chiffres**, en tableau, chacun avec sa source.
 3. **Les alertes** : réglementaires, techniques, de marché — chacune avec ce qu'il faut vérifier.
 4. **Ce qui manque** pour trancher, et où le trouver.
+
+## Livrables
+Quand le résultat est à conserver ou à transmettre (bilan, fiche, estimation, dossier de prix,
+lecture de marché), le produire **en deux formats, toujours** : un fichier **Markdown** (`.md`), la
+source, lisible par un humain et par une IA, que l'utilisateur pourra redonner pour reprendre le
+dossier ; et un **PDF** (A4, tableaux lisibles, sources en fin), pour l'envoi à un tiers (vendeur,
+banquier, associé, notaire) : non modifiable, s'ouvre partout. Un **Word** (`.docx`) seulement si
+l'utilisateur dit qu'un tiers doit modifier le document. Nommer les fichiers
+`<objet>_<commande>_<AAAA-MM-JJ>` (ex. `Le-Chesnay-Rocquencourt_ville_2026-11-19`). Le PDF et le
+`.md` disent la même chose : pas de version « embellie » qui en dirait plus que la source.

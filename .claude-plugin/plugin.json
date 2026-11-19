@@ -1,6 +1,6 @@
 {
   "name": "arpent",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "L'immobilier français avec les données publiques : bilan d'opération de marchand de biens (TVA sur marge), actif à revendre hors immobilier, estimation et dossier de prix juste (DVF), fiche d'un bien (cadastre, urbanisme, DPE, risques), attractivité d'une commune, lecture du marché, cadrage d'un dossier de succession — avec les garde-fous réglementaires français.",
   "author": {
     "name": "Alexandre Lopez & Claude"
