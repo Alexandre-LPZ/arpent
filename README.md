@@ -18,7 +18,7 @@ la main.
 | `/bilan` | Bilan d'opération de marchand de biens : méthode à rebours, TVA sur marge, verdict par rapport à une cible de 5 à 15 % de marge |
 | `/actif` | Actif à revendre hors immobilier : parts de société, fonds de commerce, véhicule de collection, œuvre, bateau — même méthode à rebours, prix réalisés, frais et fiscalité de la classe (à valider), ce qui tue l'opération |
 | `/estimer` | Estimation par comparables DVF (médiane, quartiles) et **dossier de prix juste** daté à archiver |
-| `/fiche-bien` | Fiche d'un bien ou d'une parcelle : cadastre, urbanisme (PLU), risques (Géorisques), DPE, historique de prix |
+| `/fiche-bien` | Fiche d'un bien ou d'une parcelle en six thèmes : parcelle et propriétaire (personne morale), bâti, contraintes (PLU, abords ABF, risques, carrières), environnement (fibre, antennes), projets, prix — et où chercher ce que le public ne donne pas |
 | `/ville` | Attractivité d'une commune : revenus, accessibilité, dynamisme, marché, projets |
 | `/marche` | Lecture du marché d'un territoire : acheteurs, équilibré ou vendeurs, tendance, sources datées, ce qui invaliderait la lecture — jamais de prévision chiffrée |
 | `/succession` | Cadrage d'un dossier de succession avec biens ou parts de SCI : issues possibles, transparence |
@@ -93,7 +93,7 @@ section explains what it does for readers who don't read French.
 | `/bilan` | Dealer's deal appraisal: backward method from resale price, VAT on margin, verdict against a 5–15 % margin target |
 | `/actif` | Resale asset outside real estate: company shares, business goodwill (*fonds de commerce*), collector car, artwork, boat — same backward method, realised prices only, class-specific costs and taxes (flagged "to be validated"), deal-killers |
 | `/estimer` | Valuation by DVF comparables (median, quartiles) and a dated **fair-price file** to archive |
-| `/fiche-bien` | Property or parcel sheet: cadastre, planning rules (PLU), hazards (Géorisques), energy rating (DPE), price history |
+| `/fiche-bien` | Property or parcel sheet in six themes: parcel and owner (legal entities only), building, constraints (PLU, heritage-protection perimeters, hazards, quarries), surroundings (fibre, cell towers), projects, prices — and where to look for what open data does not give |
 | `/ville` | Attractiveness of a municipality: income, accessibility, jobs, market, projects |
 | `/marche` | Reading of a territory's market: buyers', balanced or sellers' market, trend, dated sources, what would invalidate the reading — never a numeric forecast |
 | `/succession` | Framing of an estate file with property or SCI shares: possible outcomes, transparency |

@@ -51,6 +51,11 @@ réponses du vendeur, et la classe est une **opinion** de l'humain, pas une donn
   « massacrent » le prix.
 - Conseil de la maison : le **retirer de la vente un à deux mois**, puis le remettre au prix de
   marché, plutôt que de baisser par paliers successifs.
+- **Comment le voir** : l'historique d'une annonce (date de première parution, baisses de prix
+  successives, retraits et remises) se lit sur des outils de suivi des annonces (castorus.com, extension
+  de navigateur, usage manuel par le professionnel). Ce sont des **prix affichés** : ils disent la
+  trajectoire du vendeur, jamais le marché. Arpent ne les scrute pas ; il demande au professionnel
+  « depuis quand, combien de baisses » et l'écrit « déclaré ».
 - L'effet est plus fort en **marché d'acheteurs** qu'en marché de vendeurs. Dire lequel on observe
   avec des chiffres (évolution des médianes et du **nombre** de ventes DVF sur 3 à 4 semestres), pas à
   l'intuition.

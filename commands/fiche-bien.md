@@ -1,7 +1,10 @@
 ---
-description: Fiche complète d'un bien ou d'une parcelle — cadastre, urbanisme, risques, DPE, historique de prix
+description: Fiche complète d'un bien ou d'une parcelle — parcelle et propriétaire (personne morale), bâti, contraintes (PLU, abords ABF, risques, carrières), environnement (fibre, antennes), projets, prix
 ---
 Avec le skill `arpent`, lis `references/fiche-bien.md` puis établis la fiche de : $ARGUMENTS
 
-Suis l'ordre de la fiche, une source par ligne. Termine par le potentiel, les risques et ce qui reste
-à vérifier sur place ou en mairie.
+Six thèmes, une page, une source datée par ligne ; les servitudes AC1/AC4 (abords, site patrimonial)
+sont lues sur l'API Carto GPU ; le propriétaire n'est cherché que s'il est une personne morale. Pour
+chaque donnée que le public ne donne pas, écrire « où chercher » (lien ou service), jamais une
+supposition. Verdict en une ligne d'abord, puis potentiel, risques, à vérifier sur place ou en mairie,
+et les lignes déclarées par le professionnel.

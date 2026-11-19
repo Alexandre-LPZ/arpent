@@ -1,5 +1,22 @@
 # Journal des versions — Arpent
 
+## 0.6.0 — 19 novembre 2026 — « le bâti et son environnement »
+Issue de la revue de 38 « sites pratiques » d'un architecte : 5 sources publiques retenues, les
+autres écartées ou renvoyées au professionnel (`fiche-bien.md`, colonne « où chercher »).
+- `/fiche-bien` réorganisé en six thèmes : parcelle et propriété, bâti, contraintes, environnement,
+  projets, prix. Verdict en tête ; chaque donnée absente dit où la chercher.
+- **Servitudes AC1 / AC4** (abords de monuments, sites patrimoniaux) lues sur l'API Carto GPU —
+  testé : le centre du Chesnay-Rocquencourt est dans les abords du Domaine de Versailles.
+- **Fibre** (ARCEP, commune et immeuble) — testé : 98 % des locaux éligibles à 78158.
+- **Antennes relais** (ANFR, supports avec hauteur et coordonnées) — testé : 30 supports à 78158.
+- **Propriétaires personnes morales** (DGFiP, version unifiée parquet) — testé : 972 parcelles à
+  78158. Jamais de recherche sur une personne physique (règle 4).
+- **BDNB** (bâti : année, matériaux, hauteur) : accès documenté (API, compte gratuit, 10 000
+  appels/mois, variable `BDNB_API_KEY`), **appels non testés** faute de compte ; sans accès, repli sur
+  les DPE ADEME et « bâti : non documenté ».
+- `vendeur.md` : lecture de l'historique d'une annonce (outil du professionnel, prix affichés,
+  « déclaré »).
+
 ## 0.5.3 — 19 novembre 2026
 - Description du plugin dans `marketplace.json` mise à jour (marché, actifs, INPI) : c'est elle que
   l'app Claude affiche dans la liste des plug-ins.

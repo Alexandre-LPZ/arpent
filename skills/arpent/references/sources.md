@@ -67,6 +67,64 @@ directrice, non audité).
 | DPE des logements existants (depuis 07/2021) | ADEME | jeu `67f7e557cb268460ce66c8d4` |
 | DPE avant 07/2021 / logements neufs | ADEME | `5ee2391763c79811ddfbc86a` / `67f7e5758ffc5d79ab9e8c27` |
 | Friches recensées | Sites référencés dans Cartofriches (Cerema) | `61892a26c94e39bde1dbf7ac` |
+| **Propriétaire personne morale** (société, SCI, collectivité, État) | Fichier des parcelles des personnes morales (DGFiP), version unifiée parquet | `6900772ca5c4fa6c5687b3bd` |
+| **Fibre à l'adresse / dans la commune** | ARCEP « Ma connexion internet » | `5e836644ca07c8558d91a6fc` |
+| **Antennes relais (supports, hauteur, type)** | ANFR, installations radioélectriques > 5 W | `551d4ff3c751df55da0cd89f` |
+| **Bâti : année, matériaux, hauteur, DPE rattachés** | BDNB (CSTB) — API, compte gratuit | `61dc7157488f8cdb4283e3c3` |
+
+### Servitudes AC1 / AC4 (abords de monuments, sites patrimoniaux) — testé le 19/11/2026
+API Carto GPU, `GET https://apicarto.ign.fr/api/gpu/assiette-sup-s?geom=<GeoJSON Point>` → chaque
+`feature.properties` donne `suptype` (`ac1` abords, `ac4` site patrimonial remarquable…), `typeass`
+(« Périmètre des abords »), `nomsuplitt` (le monument), `fichier` (l'acte). Même appel avec
+`zone-urba` pour le zonage PLU (`libelle`, `typezone`, `partition` = `DU_<insee>`). Cas vérifié :
+point 2.1226 / 48.8277 (Le Chesnay) → AC1 « Domaine national de Versailles et de Trianon »,
+périmètre des abords, acte du 07/07/2016 ; point 2.1301 / 48.8049 → AC4 « Site patrimonial
+remarquable de Versailles ». Conséquence à écrire : avis de l'ABF sur tout permis.
+
+### Fibre — ARCEP « Ma connexion internet » (testé le 19/11/2026)
+Les ressources de data.gouv.fr renvoient vers des dossiers sur `data.arcep.fr` (suivre les
+redirections, `curl -L`). Deux niveaux :
+- **Commune** : `https://data.arcep.fr/fixe/maconnexioninternet/statistiques/last/commune/commune_techno.csv`
+  (2,3 Mo, `;`) : `code_insee`, `nbr` (locaux), `elig_ftth`, `elig_coax`, `elig_cu`, `elig_4gf`,
+  `date`. Cas vérifié : 78158, 18 602 locaux, 18 275 éligibles fibre (98 %) au 30/06/2026.
+- **Immeuble** : `https://data.arcep.fr/fixe/maconnexioninternet/base_imb/last/departement/base_imb_<dep>.csv.gz`
+  (78 : 16 Mo) : un identifiant par immeuble avec adresse BAN (`addr_numero`, `addr_nom_voie`,
+  `addr_code_insee`) ; l'éligibilité par immeuble est dans `eligibilite/last/` (même arborescence).
+  3 148 immeubles pour 78158.
+Écrire « fibre : éligible (ARCEP, 30/06/2026) » ou le taux communal si l'adresse n'est pas trouvée.
+
+### Antennes relais — ANFR (testé le 19/11/2026)
+Jeu `551d4ff3…`, ressource « Tables supports antennes émetteurs bandes <mois> » (zip 62 Mo, mensuel ;
+prendre le plus récent). Dans le zip : `SUP_SUPPORT.txt` (`;`, latin-1, 199 000 lignes) : `SUP_ID`,
+`NAT_ID` (nature : pylône, château d'eau, toit…), coordonnées en degrés-minutes-secondes
+(`COR_NB_DG_LAT`, `COR_NB_MN_LAT`, `COR_NB_SC_LAT`, `COR_CD_NS_LAT`, idem LON), `SUP_NM_HAUT`
+(hauteur en m), adresse, `COM_CD_INSEE`. `SUP_ANTENNE.txt` et `SUP_EMETTEUR.txt` donnent les
+opérateurs et bandes. Procédure : filtrer `COM_CD_INSEE` = commune (et voisines), convertir en
+décimal, calculer la distance au bien, lister ceux à moins de 300 m. Cas vérifié : 30 supports au
+Chesnay-Rocquencourt (ex. château d'eau des Hubies 49,6 m ; Quartier Parly 2, 9 rue Potier, 29 m).
+Arpent écrit la distance, la hauteur et la nature ; **aucun jugement sanitaire**.
+
+### Propriétaires personnes morales — DGFiP (testé le 19/11/2026)
+Fichiers officiels : `605d268f4661cf23272817c3` (zips par millésime, lourds, téléchargement parfois
+coupé). Version unifiée par la communauté, plus pratique : `6900772ca5c4fa6c5687b3bd`,
+`parcelles_personnes_morales_<année>.parquet` (2025 : 376 Mo, 21 M de lignes, lecture avec un
+filtre `code_insee`, pyarrow suffit). Colonnes : `code_insee`, `section`, `numero_parcelle`,
+`prefixe`, `numero_siren`, `denomination`, `forme_juridique_abregee`, `code_droit_libelle`
+(propriétaire, usufruitier…), `numero_voirie`, `nom_voie`, `contenance_parcelle_centiare`. Cas
+vérifié : 972 parcelles de personnes morales à 78158 (commune 162, État 54, syndicat de copropriété
+Chesnay-Trianon 47, SCI des Peupliers 39, bailleurs sociaux…). Une parcelle absente du fichier
+appartient à une personne physique : **on s'arrête là** (règle 4). Dire le millésime (situation au
+1er janvier).
+
+### Bâti — BDNB du CSTB (accès vérifié le 19/11/2026, appels non testés)
+Les exports complets font 37 à 48 Go : inutilisables. La voie, c'est l'**API BDNB Open**
+(`https://api.bdnb.io/v1/bdnb`) : compte gratuit sur `api-portail.bdnb.io`, 10 000 appels par mois,
+interrogation par adresse (clé BAN), parcelle ou identifiant de bâtiment ; donne année de
+construction, matériaux, hauteur, nombre de logements, DPE rattachés. Même règle que l'INPI :
+l'utilisateur ouvre son compte, garde sa clé dans une variable d'environnement (`BDNB_API_KEY`),
+rien dans le dépôt ; sans la variable, Arpent écrit « bâti : non documenté » et se rabat sur les DPE
+ADEME (année et surface quand le DPE les porte). **Les appels, les champs et le format de la clé
+restent à tester avec un compte** : ne pas les inventer, lire le Swagger du portail une fois connecté.
 
 Si une API publique est injoignable depuis l'environnement (cas vu le 18/11/2026 : Géorisques
 depuis Claude Code sur un poste Windows), Arpent écrit « non vérifié (service injoignable) » et
