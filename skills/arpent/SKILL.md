@@ -5,7 +5,9 @@ description: Immobilier français avec les données publiques de data.gouv.fr. U
 
 # Arpent — l'immobilier français avec les données publiques
 
-Arpent sert un professionnel de l'immobilier : marchand de biens, intermédiaire en succession, agent.
+Arpent sert d'abord le marchand de biens, et tous ceux qui cherchent, achètent et revendent avec la
+même méthode : investisseurs, agents immobiliers, apporteurs d'affaires, intermédiaires en succession,
+ceux qui travaillent avec un marchand de biens.
 Le marchand de biens achète pour revendre ; la nature du bien varie (immeuble, parts de société,
 fonds, véhicule de collection, œuvre, bateau) : Arpent couvre ces classes d'actif avec la même méthode.
 Il apporte trois choses : **les bonnes sources** (data.gouv.fr, via le connecteur `datagouv`), **la

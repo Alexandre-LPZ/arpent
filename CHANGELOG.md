@@ -1,5 +1,11 @@
 # Journal des versions — Arpent
 
+## 0.8.2 — 20 novembre 2026
+- Aperçu et présentation : Arpent dit d'abord **pour qui** il est — les marchands de biens, et tous
+  ceux qui cherchent, achètent et revendent avec la même méthode (investisseurs, agents immobiliers,
+  apporteurs d'affaires, ceux qui travaillent avec un marchand de biens). Même phrase dans
+  `marketplace.json` (l'aperçu du panneau Cowork), `plugin.json`, le README (FR/EN) et le SKILL.md.
+
 ## 0.8.1 — 19 novembre 2026
 - Livrables : tout résultat à conserver ou transmettre sort **en Markdown (source, pour l'humain et
   l'IA) et en PDF (envoi)**, Word seulement si un tiers doit modifier ; nommage des fichiers.

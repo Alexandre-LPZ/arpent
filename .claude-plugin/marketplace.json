@@ -1,8 +1,8 @@
 {
   "name": "arpent",
-  "description": "Arpent — l'immobilier français et les actifs à revendre avec les données publiques (data.gouv.fr, INPI).",
+  "description": "Arpent — l'immobilier et les actifs à revendre avec les données publiques (data.gouv.fr, INPI). Pour les marchands de biens, investisseurs, agents, apporteurs d'affaires.",
   "owner": { "name": "Alexandre Lopez" },
   "plugins": [
-    { "name": "arpent", "source": "./", "description": "Bilan d'opération (TVA sur marge), actif à revendre hors immobilier (parts, fonds, véhicule, œuvre, bateau), estimation DVF, fiche d'un bien, attractivité d'une commune, lecture du marché, succession — comptes et marques via l'INPI, données publiques, garde-fous réglementaires français." }
+    { "name": "arpent", "source": "./", "description": "Pour les marchands de biens, et pour tous ceux qui cherchent, achètent et revendent avec la même méthode : investisseurs, agents immobiliers, apporteurs d'affaires, ceux qui travaillent avec un marchand de biens. Bilan d'opération (TVA sur marge, fiche de terrain du professionnel), actif à revendre hors immobilier (parts, fonds, véhicule, œuvre, bateau), estimation DVF, fiche d'un bien, attractivité d'une commune, lecture du marché, succession. Données publiques (data.gouv.fr, INPI), garde-fous du droit français, l'humain décide." }
   ]
 }

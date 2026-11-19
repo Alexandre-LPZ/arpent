@@ -2,9 +2,10 @@
 
 *Français ci-dessous · [English version](#arpent--french-real-estate-and-resale-assets-with-open-public-data)*
 
-**Arpent** est un plug-in Claude pour les professionnels de l'immobilier en France : marchands de
-biens, agents, intermédiaires en succession — et pour tout ce qu'un marchand de biens achète pour
-revendre, immobilier ou non. Il branche Claude sur les données publiques de
+**Arpent** est un plug-in Claude pour les marchands de biens, et pour tous ceux qui cherchent,
+achètent et revendent avec la même méthode : investisseurs, agents immobiliers, apporteurs
+d'affaires, intermédiaires en succession, ceux qui travaillent avec un marchand de biens — pour tout
+ce qui s'achète pour être revendu, immobilier ou non. Il branche Claude sur les données publiques de
 **data.gouv.fr** (via le serveur MCP officiel `https://mcp.data.gouv.fr/mcp`, en lecture seule, sans
 compte ni clé) et lui apprend à s'en servir avec la méthode du métier et les garde-fous du droit
 français.
@@ -77,9 +78,10 @@ MIT — voir `LICENSE`. Données : licences de leurs producteurs (Licence Ouvert
 
 # Arpent — French real estate and resale assets with open public data
 
-**Arpent** is a Claude plugin for real-estate professionals in France: property dealers
-(*marchands de biens*), agents, estate intermediaries — and for anything a dealer buys in order to
-resell, property or not. It connects Claude to the French open-data portal **data.gouv.fr** (through
+**Arpent** is a Claude plugin for French property dealers (*marchands de biens*), and for everyone
+who hunts, buys and resells with the same method: investors, real-estate agents, deal finders, estate
+intermediaries, anyone working alongside a dealer — for anything bought in order to resell, property
+or not. It connects Claude to the French open-data portal **data.gouv.fr** (through
 the official MCP server `https://mcp.data.gouv.fr/mcp`, read-only, no account or key) and teaches it
 the trade's method and the guardrails of French law.
 
