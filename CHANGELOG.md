@@ -1,5 +1,9 @@
 # Journal des versions — Arpent
 
+## 0.5.3 — 19 novembre 2026
+- Description du plugin dans `marketplace.json` mise à jour (marché, actifs, INPI) : c'est elle que
+  l'app Claude affiche dans la liste des plug-ins.
+
 ## 0.5.2 — 18 novembre 2026
 - README bilingue (français, puis anglais complet) et lien vers la fiche de réutilisation
   data.gouv.fr (9 jeux de données rattachés).
