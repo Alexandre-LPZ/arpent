@@ -15,6 +15,11 @@ société : interroger Recherche d'entreprises et BODACC, demander les comptes d
 l'actif net corrigé inclut ou non le fonds. Si l'actif pourrait être conservé plutôt que revendu, le
 signaler : le régime change.
 
+Si des documents sont joints (PDF, Word, photos, plans, annonces), les lire **en entier, texte et
+images** : rendre les pages en images si nécessaire, regarder chaque photo et chaque plan, et en
+tirer une pré-appréciation de l'état et de la configuration, écrite « vu sur photo (source,
+date) » (`terrain-regles.md`, pièces visuelles) : indication, pas expertise.
+
 Format d'Arpent : **le verdict en une ligne vient en premier** (prix d'achat maximal, écart avec le
 prix demandé, et la variable inconnue qui décide), puis les chiffres, les alertes, ce qui manque.
 Répéter le prix maximal et l'écart dans la conclusion.

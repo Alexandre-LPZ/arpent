@@ -1,5 +1,14 @@
 # Journal des versions — Arpent
 
+## 0.8.3 — 20 novembre 2026
+- **Pièces visuelles** : toute photo ou plan disponible est exploité, y compris à l'intérieur d'un PDF,
+  d'un Word, d'une annonce ou d'une page web (rendre les pages en images si l'outil n'extrait que le
+  texte). Observation écrite « vu sur photo (source, date) », valeur d'indication : hypothèse étayée,
+  jamais pièce vérifiée ni expertise ; peut dégrader une réponse de fiche, jamais l'améliorer ; ce qui
+  n'est pas photographié s'écrit « non vu ». Règle dans `terrain-regles.md`, rappel dans SKILL.md et
+  dans les commandes `bilan`, `fiche-bien`, `estimer`, `actif`. Née d'un cas réel : un dossier de
+  diagnostic et une expertise en PDF lus sans leurs photos.
+
 ## 0.8.2 — 20 novembre 2026
 - Aperçu et présentation : Arpent dit d'abord **pour qui** il est — les marchands de biens, et tous
   ceux qui cherchent, achètent et revendent avec la même méthode (investisseurs, agents immobiliers,

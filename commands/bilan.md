@@ -13,3 +13,8 @@ publiques et terminer par les questions sans réponse, chacune avec ce qu'une r�
 changerait. Verdict en une ligne, en tête, par la grille de décision (première réponse bloquante),
 puis la cible maison (5 à 15 %) en contrôle, les risques qui tuent l'opération, et ce qui manque.
 S'il manque une donnée indispensable (prix demandé, surface), pose une seule question.
+
+Si des documents sont joints (PDF, Word, photos, plans, annonces), les lire **en entier, texte et
+images** : rendre les pages en images si nécessaire, regarder chaque photo et chaque plan, et en
+tirer une pré-appréciation de l'état et de la configuration, écrite « vu sur photo (source,
+date) » (`terrain-regles.md`, pièces visuelles) : indication, pas expertise.

@@ -21,6 +21,29 @@ par le professionnel, daté), **hypothèse** (posée pour calculer, à remplacer
 s'arrête). Les données publiques gardent source et date. Une date de visite ne transforme pas une
 déclaration en pièce.
 
+## Les pièces visuelles : photos et plans (règle du 20/11/2026)
+**Toute image exploitable est exploitée dès qu'elle est disponible**, pour ce qu'elle est : photos
+jointes, photos et plans contenus dans un PDF, un Word, une expertise, un dossier de diagnostic, une
+annonce ou une page en ligne. Lire un PDF, c'est lire **son texte et ses images** : si l'outil
+n'extrait que le texte, rendre les pages en images et les regarder, une par une. Ne jamais dire
+« pas de photo » sans avoir ouvert les pages.
+
+Ce qu'on en tire, et comment on l'écrit :
+- une **pré-appréciation de l'état** (façades, toiture, menuiseries, humidité visible, état des
+  pièces, installations, extérieurs ; pour un véhicule, carrosserie, sellerie, compartiment moteur ;
+  pour une œuvre, conservation visible), la **configuration** (plans : surfaces, distribution,
+  hauteurs, orientation, ce qui se divise ou s'agrandit), les **incohérences** entre le texte et
+  l'image (surface annoncée ≠ plan, « rénové » ≠ photo) ;
+- chaque observation s'écrit **« vu sur photo (source, date de la photo si connue) »** ; elle a
+  valeur d'**indication**, jamais d'expertise : elle compte comme une **hypothèse étayée**, pas comme
+  une pièce vérifiée ;
+- une photo peut **dégrader** une réponse de la fiche (un A déclaré devient B si l'image montre un
+  défaut) ; elle ne peut jamais **améliorer** une réponse au-delà de ce qu'une pièce établit, ni
+  remplacer une visite ou un diagnostic ;
+- les photos d'un vendeur montrent ce qu'il a choisi de montrer : ce qui n'est pas photographié
+  (combles, sous-sol, dessous de carrosserie) s'écrit « non vu », pas « correct » ;
+- la date compte : une photo d'une expertise de 2020 décrit 2020. Le dire.
+
 ## Les quatre verdicts
 | Verdict | Sens | Ce qui suit |
 |---|---|---|

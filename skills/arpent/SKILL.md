@@ -75,6 +75,13 @@ cher quand on les oublie).
 3. **Les alertes** : réglementaires, techniques, de marché — chacune avec ce qu'il faut vérifier.
 4. **Ce qui manque** pour trancher, et où le trouver.
 
+## Pièces visuelles
+Photos et plans fournis, directement ou **à l'intérieur d'un PDF, d'un Word, d'une annonce ou d'une
+page web**, sont toujours regardés (rendre les pages en images si l'outil n'extrait que le texte) et
+exploités pour ce qu'ils sont : une **indication** sur l'état et la configuration, écrite « vu sur
+photo (source, date) », qui vaut hypothèse étayée, jamais pièce vérifiée ni expertise. Règle
+détaillée dans `references/terrain-regles.md`.
+
 ## Livrables
 Quand le résultat est à conserver ou à transmettre (bilan, fiche, estimation, dossier de prix,
 lecture de marché), le produire **en deux formats, toujours** : un fichier **Markdown** (`.md`), la
