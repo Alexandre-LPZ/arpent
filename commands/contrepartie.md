@@ -5,7 +5,8 @@ Avec le skill `arpent`, lis `references/contrepartie.md` et `references/terrain-
 établis la position du vendeur pour cette acquisition : $ARGUMENTS
 
 Point d'entrée : le vendeur **tel que le nomment les pièces de la vente** (annonce, mandat,
-avant-contrat, titre, expertise). S'il n'y a ni pièce ni acquisition réellement envisagée, ne rien
+avant-contrat, titre, expertise) ; si c'est une SCI ou une société détenue par quelques personnes,
+aussi son gérant et ses associés publiés (`contrepartie.md`). S'il n'y a ni pièce ni acquisition réellement envisagée, ne rien
 chercher et le dire. Ordre de travail : les pièces, les mandats du vendeur (Recherche d'entreprises,
 homonymie écartée par la date ou l'année de naissance et la commune), BODACC, puis les comptes des
 seules sociétés liées au bien ou en difficulté (RNE, par SIREN), l'étranger seulement si une piste y

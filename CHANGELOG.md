@@ -1,5 +1,13 @@
 # Journal des versions — Arpent
 
+## 0.9.1 — 24 novembre 2026
+- **Vendeur SCI** : son gérant et ses associés publiés sont la contrepartie économique (ils décident
+  de la vente et, dans une société civile, répondent indéfiniment des dettes sociales à proportion
+  de leurs parts, C. civ. art. 1857) ; on leur applique la règle du vendeur personne physique et
+  l'on note qui détient la majorité. Restent hors champ les coassociés du vendeur dans ses autres
+  sociétés. La 0.9.0 excluait, à tort, les associés de la SCI venderesse : relevé avant le premier
+  test réel.
+
 ## 0.9.0 — 24 novembre 2026 — la position du vendeur
 - **Nouveau module `contrepartie.md` et commande `/contrepartie`** : la position du vendeur côté
   acheteur (urgence, solvabilité, leviers), établie par les pièces publiques et non par ce qu'il dit.

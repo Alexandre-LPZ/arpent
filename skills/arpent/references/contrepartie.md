@@ -16,6 +16,12 @@ lequel les registres des sociétés sont publics.
 
 - **Vendeur personne morale** (SCI, société, holding) : tout ce que publient les registres des
   sociétés et la publicité foncière.
+- **SCI ou société détenue par quelques personnes** : son gérant et ses associés publiés (statuts,
+  RNE) sont la **contrepartie économique**. Ils décident de la vente et, dans une société civile,
+  répondent indéfiniment des dettes sociales à proportion de leurs parts (C. civ., art. 1857). On
+  applique à chacun la règle du vendeur personne physique ci-dessous, et l'on note qui détient la
+  majorité : c'est souvent lui, ou elle, qui décide. Au-delà (actionnaires d'une société cotée,
+  fonds, sociétés à actionnariat large), non.
 - **Vendeur personne physique** : ses **mandats de dirigeant et participations** publiés dans les
   registres des sociétés, puis l'analyse de ces sociétés. Avant tout usage, **écarter l'homonymie** :
   date de naissance portée par l'acte ou l'avant-contrat (filtre de Recherche d'entreprises), à
@@ -25,8 +31,8 @@ lequel les registres des sociétés sont publics.
 - **Hors champ, toujours** :
   - la vie privée : domicile hors des pièces, famille, santé, mœurs, réseaux sociaux personnels,
     état civil au-delà du contrôle d'homonymie ;
-  - toute personne qui n'est pas partie à la vente : associés et co-dirigeants apparaissent tels que
-    la société les publie, sans recherche sur eux ;
+  - toute personne étrangère à la vente : les coassociés et co-dirigeants du vendeur **dans ses
+    autres sociétés** apparaissent tels que ces sociétés les publient, sans recherche sur eux ;
   - tout contact avec un tiers sous un prétexte ;
   - les registres à accès restreint : registres des bénéficiaires effectifs (accès du public fermé
     depuis l'arrêt de la CJUE du 22/11/2022), fichiers bancaires (en France, aucun registre public

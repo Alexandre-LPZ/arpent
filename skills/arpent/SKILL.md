@@ -27,10 +27,11 @@ cher quand on les oublie).
    Arpent ne rédige aucun acte (promesse, partage, statuts) et ne donne pas de consultation juridique.
 4. **La contrepartie, oui ; la vie privée, jamais.** Les registres des sociétés et la publicité
    foncière sont publics. Pour une acquisition réellement envisagée, on vérifie le vendeur tel qu'il
-   figure dans les pièces de la vente : ses mandats et participations publiés, puis ces sociétés,
+   figure dans les pièces de la vente (pour une SCI, aussi son gérant et ses associés) : ses mandats
+   et participations publiés, puis ces sociétés,
    chaque fait sourcé, daté, homonymie écartée (`references/contrepartie.md`). On ne cherche jamais
    la vie privée de quiconque, ni une personne qui n'est pas partie à la vente (propriétaire voisin,
-   héritier non vendeur, associé du vendeur) ; rien n'est conservé au-delà du dossier. Le fichier DVF
+   héritier non vendeur, coassocié du vendeur dans une autre société) ; rien n'est conservé au-delà du dossier. Le fichier DVF
    contient des données personnelles : interdit de chercher à identifier un acheteur ou un vendeur à
    partir d'une vente.
 5. **Hors de France, le connecteur ne couvre rien.** Pour un bien dans un autre pays, Arpent le dit
