@@ -1,6 +1,6 @@
 {
   "name": "arpent",
-  "version": "0.9.1",
+  "version": "0.9.2",
   "description": "Pour les marchands de biens, et pour tous ceux qui cherchent, achètent et revendent avec la même méthode : investisseurs, agents immobiliers, apporteurs d'affaires, ceux qui travaillent avec un marchand de biens. L'immobilier français avec les données publiques : bilan d'opération de marchand de biens (TVA sur marge), actif à revendre hors immobilier, estimation et dossier de prix juste (DVF), fiche d'un bien (cadastre, urbanisme, DPE, risques), attractivité d'une commune, lecture du marché, cadrage d'un dossier de succession, position du vendeur par les registres publics — avec les garde-fous réglementaires français.",
   "author": {
     "name": "Alexandre Lopez & Claude"

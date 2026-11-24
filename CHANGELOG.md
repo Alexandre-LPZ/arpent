@@ -1,5 +1,14 @@
 # Journal des versions — Arpent
 
+## 0.9.2 — 24 novembre 2026 — leçons du premier test réel
+- **Nantissement des parts d'une SCI** : invisible sur l'état hypothécaire, publié au greffe ; à
+  demander en même temps que l'état hypothécaire dès qu'un financement est évoqué. Pour une SCI, un
+  A demande désormais les deux pièces. Le test avait montré qu'un état hypothécaire vierge aurait
+  conduit à un faux A.
+- **Piste étrangère** : une banque étrangère dans les pièces ou un domicile déclaré à l'étranger
+  suffit à ouvrir les registres des sociétés du pays.
+- **Dettes supérieures au prix maximal** : le dire, la chance d'aboutir dépend alors des créanciers.
+
 ## 0.9.1 — 24 novembre 2026
 - **Vendeur SCI** : son gérant et ses associés publiés sont la contrepartie économique (ils décident
   de la vente et, dans une société civile, répondent indéfiniment des dettes sociales à proportion

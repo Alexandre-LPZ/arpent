@@ -44,7 +44,9 @@ lequel les registres des sociétés sont publics.
 
 **Sobriété** : on ne fouille pas tout. Ordre de travail : (1) les pièces de la vente, (2) les
 mandats du vendeur, (3) BODACC, (4) les comptes des seules sociétés liées au bien ou en difficulté,
-(5) l'étranger seulement si une piste y mène. On s'arrête dès que la réponse V est établie.
+(5) l'étranger seulement si une piste y mène. Une banque étrangère dans les pièces ou un domicile
+déclaré à l'étranger **est** une piste : registres des sociétés du pays (gratuits, pour les sociétés
+seulement). On s'arrête dès que la réponse V est établie.
 
 ## Où chercher
 | Couche | Ce qu'on y lit | Source | Accès |
@@ -58,6 +60,7 @@ mandats du vendeur, (3) BODACC, (4) les comptes des seules sociétés liées au 
 | | procédures collectives, radiations, cessions, dissolutions | BODACC | gratuit |
 | | capitaux propres, dettes financières et leurs échéances, pertes ; associés (statuts) | API RNE de l'INPI, **par SIREN uniquement** (comptes et actes) | compte gratuit ; comptes confidentiels → « manquant » |
 | | privilèges du Trésor et de la sécurité sociale, nantissements | état des inscriptions au greffe (Infogreffe) | payant |
+| | **nantissement des parts d'une SCI** : garantie fréquente des banques privées, **invisible sur l'état hypothécaire** | greffe du tribunal de commerce du siège, publicité du nantissement (C. civ., art. 1866 ; décret n° 78-704, art. 24) | payant ; modalités **à vérifier** ; à demander **en même temps** que l'état hypothécaire dès qu'un financement est évoqué |
 | **Hors de France** | existence, dirigeants, publications, faillites | Luxembourg : LBR, RESA · Suisse : Zefix, FOSC · Belgique : BCE, Moniteur belge · Royaume-Uni : Companies House · Allemagne : Handelsregister | conditions **à vérifier à l'usage** ; registre payant ou sur intérêt justifié : le dire et s'arrêter |
 | | Suisse : poursuites pour dettes d'un vendeur domicilié en Suisse | office des poursuites du domicile : extrait sur **intérêt rendu vraisemblable** (LP, art. 8a) | **à valider avec l'avocat** ; une négociation réelle et documentée, jamais une curiosité |
 
@@ -99,6 +102,12 @@ Deux règles de lecture, symétriques de « manquant n'est jamais A » :
   indices font au mieux un B. Une société d'homonyme non écarté ne compte pas.
 - **V non recherchée s'écrit « V non établie »** et la négociation se mène comme en A, l'hypothèse
   prudente pour l'acheteur. La V ne bloque jamais un GO.
+- **Pour une SCI, un A demande deux pièces** : un état hypothécaire sans inscription significative
+  **et** l'absence de nantissement des parts au greffe. Un financement évoqué (expertise commandée
+  par une banque, banque privée) sans inscription sur l'immeuble fait penser à un nantissement des
+  parts, pas à l'absence de dette.
+- **Si les dettes connues dépassent le prix maximal**, le vendeur ne peut pas accepter sans
+  l'accord de ses créanciers : le dire, car la chance d'aboutir dépend alors de la banque.
 
 **Règle d'or** : la position du vendeur ne modifie **jamais le prix d'achat maximal**. Celui-ci vient
 de la revente, des coûts et de la marge (`marchand.md`). Elle modifie la **chance d'y arriver**,
