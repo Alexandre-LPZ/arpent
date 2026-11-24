@@ -15,4 +15,6 @@ avec le professionnel indiqué. Arpent signale ; il ne tranche pas.
 | Dommages-ouvrage | Assurance obligatoire pour le maître d'ouvrage | Code des assurances, art. L242-1 | Assureur |
 | Passoires thermiques | Logements G, puis F, puis E progressivement interdits à la location (2025, 2028, 2034) | Loi n° 2021-1104 du 22 août 2021 (Climat et Résilience) | Notaire, ADIL |
 | Construction neuve | Exigences énergétiques et carbone | RE2020 | Bureau d'études |
-| Données personnelles | DVF et autres données publiques : pas de ré-identification ni de fichage de particuliers | RGPD ; conditions de réutilisation DGFiP | — |
+| Données personnelles | DVF et autres données publiques : pas de ré-identification ni de fichage de particuliers. Vérification de la contrepartie (`contrepartie.md`) : intérêt légitime de l'acquéreur, données minimales, limitées au dossier, effacées avec lui | RGPD, art. 5 et 6.1.f ; conditions de réutilisation DGFiP | Avocat |
+| Violence économique | Abuser de l'état de dépendance du cocontractant **à son égard** pour en tirer un avantage manifestement excessif est une violence : nullité du contrat | Code civil, art. 1143 | Avocat |
+| Information et dol | Le devoir d'information ne porte pas sur l'estimation de la valeur ; ne pas la révéler n'est pas un dol. Affirmer un fait faux ou dissimuler intentionnellement une information déterminante l'est | Code civil, art. 1112-1 et 1137 | Avocat |

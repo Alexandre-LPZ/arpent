@@ -1,6 +1,6 @@
 ---
 name: arpent
-description: Immobilier français avec les données publiques de data.gouv.fr. Utiliser pour un bilan d'opération de marchand de biens (TVA sur marge), le bilan d'un actif à revendre hors immobilier (parts de société, fonds de commerce, véhicule de collection, œuvre, bateau), une estimation de prix et un dossier de comparables (DVF), la fiche d'un bien ou d'une parcelle (cadastre, urbanisme, DPE, risques), l'attractivité d'une commune, la lecture du marché d'un territoire, la construction neuve « prête à finir », ou le cadrage d'un dossier de succession avec biens ou parts de SCI. Porte les garde-fous réglementaires français.
+description: Immobilier français avec les données publiques de data.gouv.fr. Utiliser pour un bilan d'opération de marchand de biens (TVA sur marge), le bilan d'un actif à revendre hors immobilier (parts de société, fonds de commerce, véhicule de collection, œuvre, bateau), une estimation de prix et un dossier de comparables (DVF), la fiche d'un bien ou d'une parcelle (cadastre, urbanisme, DPE, risques), l'attractivité d'une commune, la lecture du marché d'un territoire, la construction neuve « prête à finir », le cadrage d'un dossier de succession avec biens ou parts de SCI, ou la position d'un vendeur (urgence, solvabilité, leviers de négociation) établie par les registres publics des sociétés. Porte les garde-fous réglementaires français.
 ---
 
 # Arpent — l'immobilier français avec les données publiques
@@ -25,10 +25,14 @@ cher quand on les oublie).
 3. **Le droit se valide chez un professionnel.** Les points juridiques et fiscaux sont signalés avec
    leur texte de référence et la mention « à valider par le notaire, l'avocat ou l'expert-comptable ».
    Arpent ne rédige aucun acte (promesse, partage, statuts) et ne donne pas de consultation juridique.
-4. **Pas de fiches sur des particuliers.** Les données sur les sociétés (SCI, dirigeants publiés au
-   registre) sont publiques ; on ne constitue pas de dossier sur des personnes physiques (héritiers,
-   vendeurs). Le fichier DVF contient des données personnelles : interdit de chercher à identifier
-   un acheteur ou un vendeur à partir d'une vente.
+4. **La contrepartie, oui ; la vie privée, jamais.** Les registres des sociétés et la publicité
+   foncière sont publics. Pour une acquisition réellement envisagée, on vérifie le vendeur tel qu'il
+   figure dans les pièces de la vente : ses mandats et participations publiés, puis ces sociétés,
+   chaque fait sourcé, daté, homonymie écartée (`references/contrepartie.md`). On ne cherche jamais
+   la vie privée de quiconque, ni une personne qui n'est pas partie à la vente (propriétaire voisin,
+   héritier non vendeur, associé du vendeur) ; rien n'est conservé au-delà du dossier. Le fichier DVF
+   contient des données personnelles : interdit de chercher à identifier un acheteur ou un vendeur à
+   partir d'une vente.
 5. **Hors de France, le connecteur ne couvre rien.** Pour un bien dans un autre pays, Arpent le dit
    et liste ce qu'il faudrait trouver localement (cadastre, prix, urbanisme, fiscalité).
 
@@ -41,10 +45,11 @@ cher quand on les oublie).
 | Fiche de terrain commerces et bureaux : emplacement n°1/1 bis/2, valeur utilisateur / investisseur, bail, transformation | `references/terrain-commerces-bureaux.md` | (avec `/bilan`) |
 | Fiche de terrain parts de société et fonds de commerce : périmètre, rentabilité reproductible, trésorerie, continuité, équipe, investissements, garanties, sortie | `references/terrain-parts-fonds.md` | (avec `/actif`) |
 | Fiches de terrain véhicules, œuvres, bateaux | `references/terrain-vehicules.md`, `terrain-oeuvres.md`, `terrain-bateaux.md` | (avec `/actif`) |
-| Règles communes des fiches : étiquettes, quatre verdicts (GO / À SÉCURISER / NO GO en l'état / NO GO définitif), discipline des questions | `references/terrain-regles.md` | — |
+| Règles communes des fiches : étiquettes, quatre verdicts (GO / À SÉCURISER / NO GO en l'état / NO GO définitif), discipline des questions, question V | `references/terrain-regles.md` | — |
 | Actif à revendre hors immobilier (parts, fonds, véhicule, œuvre, bateau) | `references/actif.md` | `/actif` |
 | Prix d'un bien, comparables, dossier de prix juste | `references/estimation.md` | `/estimer` |
 | Lire le vendeur (A/B/C), les annonces, le mandat exclusif | `references/vendeur.md` | — |
+| Position du vendeur côté acheteur (question V : urgence, solvabilité, leviers), par les registres publics | `references/contrepartie.md` | `/contrepartie` |
 | Tout savoir d'un bien ou d'une parcelle | `references/fiche-bien.md` | `/fiche-bien` |
 | Une commune vaut-elle une opération ? | `references/territoire.md` | `/ville` |
 | Où en est le marché, dans quel sens il va (sans prévision chiffrée) | `references/marche.md` | `/marche` |
@@ -66,6 +71,8 @@ cher quand on les oublie).
   (variables `INPI_RNE_USER` / `INPI_RNE_PASSWORD`, procédure dans `references/sources.md`). Sans ces
   variables ou sans outil shell, Arpent n'essaie pas : il écrit « comptes non consultés » et demande
   les liasses. Il n'écrit jamais un identifiant dans un fichier.
+- **Pappers** (si l'utilisateur a le connecteur) : payant à l'appel, jamais par défaut ; usages
+  autorisés et interdits dans `references/contrepartie.md`.
 
 ## Format de réponse
 

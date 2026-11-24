@@ -9,6 +9,9 @@ reçoit les termes de recherche nécessaires (noms de communes, mots-clés, iden
 données) et renvoie des données publiques. Son traitement relève de la politique de data.gouv.fr :
 https://www.data.gouv.fr/pages/suivi
 
-Le skill interdit l'usage des données publiques pour identifier ou ficher des particuliers.
+Le skill interdit l'usage des données publiques pour identifier ou ficher des particuliers. Pour une
+acquisition envisagée, il vérifie la contrepartie (le vendeur nommé dans les pièces de la vente) dans
+les registres publics des sociétés, sans rien chercher sur la vie privée ni sur des tiers ; le
+résultat reste dans le dossier de l'utilisateur.
 
 Contact : ouvrir une issue sur https://github.com/Alexandre-LPZ/arpent

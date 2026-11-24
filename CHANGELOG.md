@@ -1,5 +1,33 @@
 # Journal des versions — Arpent
 
+## 0.9.0 — 24 novembre 2026 — la position du vendeur
+- **Nouveau module `contrepartie.md` et commande `/contrepartie`** : la position du vendeur côté
+  acheteur (urgence, solvabilité, leviers), établie par les pièces publiques et non par ce qu'il dit.
+  Point d'entrée : le vendeur nommé dans les pièces de la vente ; ses mandats et participations
+  publiés (API Recherche d'entreprises, recherche par personne, testée), puis BODACC, comptes RNE par
+  SIREN, état hypothécaire, registres européens (Luxembourg, Suisse, Belgique, Royaume-Uni,
+  Allemagne ; poursuites suisses sur intérêt rendu vraisemblable, à valider). Homonymie écartée par
+  la date ou l'année de naissance et la commune ; une société non attribuée ne compte pas.
+- **Question V**, commune aux six fiches de terrain : A aucune contrainte, B indices sans pièce,
+  C contrainte établie par pièce, D vente forcée. Sans pièce, jamais C ni D ; non recherchée, « V non
+  établie » et l'on négocie comme en A. Hors du tableau à rebours : **le prix d'achat maximal ne
+  bouge jamais**, seuls l'offre d'ouverture, le calendrier et les conditions changent. Proposée à la
+  fin de `/bilan` et `/actif`, jamais lancée par défaut.
+- **Règle 4 réécrite** : « la contrepartie, oui ; la vie privée, jamais ». Hors champ : vie privée,
+  personnes non parties à la vente, registres à accès restreint (bénéficiaires effectifs), contact
+  sous prétexte, conservation au-delà du dossier. DVF ne sert toujours jamais à identifier qui que
+  ce soit. Mis à jour : SKILL.md, `fiche-bien.md`, `actif.md`, `succession.md`, `vendeur.md`,
+  `sources.md`, README (FR/EN), PRIVACY.
+- **Limites légales de la négociation** (`reglementation.md`, `contrepartie.md`) : lésion des 7/12,
+  abus de l'état de dépendance (C. civ. 1143), devoir d'information et dol (1112-1, 1137 : taire son
+  estimation n'est pas un dol, affirmer un fait faux l'est), mandataire du vendeur lié à l'acheteur,
+  RGPD (intérêt légitime, données minimales). À valider avec l'avocat.
+- **Pappers, optionnel et payant** : usages autorisés (par SIREN ou par parcelle, champs explicites)
+  et interdits (parcelles par propriétaire personne physique, bénéficiaires effectifs, contrôle
+  PPE et sanctions, emails et LinkedIn, adresses des dirigeants). Arpent part des sources gratuites.
+- Née d'un cas réel : un vendeur « pas pressé » selon ses propos, que les registres publics
+  décrivent autrement.
+
 ## 0.8.3 — 20 novembre 2026
 - **Pièces visuelles** : toute photo ou plan disponible est exploité, y compris à l'intérieur d'un PDF,
   d'un Word, d'une annonce ou d'une page web (rendre les pages en images si l'outil n'extrait que le

@@ -10,7 +10,9 @@ quels travaux, quel délai). Ce que les données publiques ne donnent pas est é
 - **Propriétaire** : si c'est une **personne morale** (société, SCI, collectivité, État, bailleur),
   son nom, sa forme et son SIREN sont publics : fichier des parcelles des personnes morales (DGFiP,
   `sources.md`). Si la parcelle n'y figure pas, écrire « propriétaire : particulier, non recherché »
-  (règle 4) ; on ne cherche jamais qui.
+  (règle 4) ; on ne cherche jamais qui. Si ce propriétaire est le vendeur d'une acquisition
+  envisagée, son nom vient des pièces de la vente, et sa position se lit par `contrepartie.md`,
+  jamais par le cadastre.
 - **Division en cours ou passée** : DVF (ventes de lots de la même parcelle).
 
 ## 2. Bâti

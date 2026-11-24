@@ -23,6 +23,7 @@ la main.
 | `/ville` | Attractivité d'une commune : revenus, accessibilité, dynamisme, marché, projets |
 | `/marche` | Lecture du marché d'un territoire : acheteurs, équilibré ou vendeurs, tendance, sources datées, ce qui invaliderait la lecture — jamais de prévision chiffrée |
 | `/succession` | Cadrage d'un dossier de succession avec biens ou parts de SCI : issues possibles, transparence |
+| `/contrepartie` | Position du vendeur côté acheteur (urgence, solvabilité, leviers) par les registres publics des sociétés et la publicité foncière : question V (A à D), stratégie d'offre, limites légales. Le prix maximal ne bouge jamais |
 
 Le skill couvre aussi la construction neuve « prête à finir » et un tableau des textes de référence
 (loi Hoguet, lésion, TVA sur marge, décennale, passoires thermiques…).
@@ -32,8 +33,10 @@ Le skill couvre aussi la construction neuve « prête à finir » et un tableau 
 - L'humain décide ; Arpent calcule, compare et alerte.
 - Les points juridiques et fiscaux sont signalés avec leur texte et renvoyés au notaire, à l'avocat ou
   à l'expert-comptable. Arpent ne rédige aucun acte.
-- Pas de fiches sur des particuliers : les données DVF ne servent jamais à identifier un vendeur ou
-  un acheteur.
+- La contrepartie, oui ; la vie privée, jamais : pour une acquisition envisagée, le vendeur se
+  vérifie dans les registres publics des sociétés (mandats, sociétés, procédures), chaque fait
+  sourcé, homonymie écartée ; rien sur la vie privée ni sur les tiers, rien de conservé au-delà du
+  dossier. Les données DVF ne servent jamais à identifier un vendeur ou un acheteur.
 
 ## Ce qu'il exécute et envoie
 Arpent ne contient **aucun script ni hook**. Il déclare un seul connecteur : le serveur MCP public de
@@ -99,6 +102,7 @@ section explains what it does for readers who don't read French.
 | `/ville` | Attractiveness of a municipality: income, accessibility, jobs, market, projects |
 | `/marche` | Reading of a territory's market: buyers', balanced or sellers' market, trend, dated sources, what would invalidate the reading — never a numeric forecast |
 | `/succession` | Framing of an estate file with property or SCI shares: possible outcomes, transparency |
+| `/contrepartie` | The seller's position, from the buyer's side (urgency, solvency, leverage), read in public company registers and the land registry: question V (A to D), offer strategy, legal limits. The maximum price never moves |
 
 The skill also covers "ready-to-finish" new builds and a table of reference texts (Hoguet law,
 lesion, VAT on margin, ten-year builder's liability, energy-sieve rules…).
@@ -109,7 +113,10 @@ lesion, VAT on margin, ten-year builder's liability, energy-sieve rules…).
 - The human decides; Arpent computes, compares and alerts.
 - Legal and tax points are flagged with their reference text and sent to the notary, lawyer or
   accountant. Arpent drafts no deed.
-- No files on private individuals: DVF data is never used to identify a buyer or seller.
+- Counterparty yes, private life never: for a purchase actually under way, the seller is checked in
+  public company registers (mandates, companies, insolvency notices), each fact sourced, namesakes
+  ruled out; nothing on private life or third parties, nothing kept beyond the file. DVF data is
+  never used to identify a buyer or seller.
 
 ## What it runs and sends
 Arpent contains **no script and no hook**. It declares one connector, the public data.gouv.fr MCP

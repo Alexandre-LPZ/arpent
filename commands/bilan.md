@@ -18,3 +18,8 @@ Si des documents sont joints (PDF, Word, photos, plans, annonces), les lire **en
 images** : rendre les pages en images si nécessaire, regarder chaque photo et chaque plan, et en
 tirer une pré-appréciation de l'état et de la configuration, écrite « vu sur photo (source,
 date) » (`terrain-regles.md`, pièces visuelles) : indication, pas expertise.
+
+**Position du vendeur (question V)** : ne la cherche pas par défaut. Si les réponses à la V sont
+dans le message, applique-les ; sinon, termine par une ligne « V non établie — vérifier la position
+du vendeur dans les registres publics (`/contrepartie`) ? ». Elle ne modifie jamais le prix d'achat
+maximal, seulement l'offre d'ouverture, le calendrier et les conditions (`contrepartie.md`).

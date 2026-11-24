@@ -154,9 +154,24 @@ régionales ont été trouvées au 17/11/2026.
 | Donnée | Source | Accès |
 |---|---|---|
 | Identité d'une société, dirigeants publiés, siège, date de création | API Recherche d'entreprises (DINUM) | `https://recherche-entreprises.api.gouv.fr` |
+| Mandats d'un dirigeant (le vendeur d'une acquisition envisagée, `contrepartie.md`) | API Recherche d'entreprises, recherche par personne | voir ci-dessous |
 | Annonces légales : cessions, dissolutions, procédures collectives | API BODACC (DILA) | `https://bodacc-datadila.opendatasoft.com/api/explore/v2.0` |
 | Répertoire Sirene | API Sirene (Insee, compte requis) | `https://api.insee.fr/api-sirene/3.11` |
 | **Comptes annuels déposés, actes (statuts, PV), informations RNE** | **API RNE (INPI)**, compte gratuit requis | voir ci-dessous |
+| Mêmes données agrégées, cartographie des liens, ratios, parcelles (ventes, permis, PLU, copropriété) | Pappers, connecteur de l'utilisateur, **payant à l'appel** | optionnel ; règles d'usage dans `contrepartie.md` (par SIREN ou par parcelle, jamais par propriétaire personne physique) |
+
+### Mandats d'un dirigeant — API Recherche d'entreprises (testée le 24/11/2026, sans compte)
+Pour la **contrepartie d'une acquisition envisagée** seulement (`contrepartie.md`), jamais pour
+quelqu'un d'autre. Le nom vient des pièces de la vente.
+`GET https://recherche-entreprises.api.gouv.fr/search?nom_personne=<NOM>&prenoms_personne=<Prénom>&type_personne=dirigeant`
+→ les sociétés où une personne de ce nom est dirigeante ; pour chacune, `dirigeants[]` donne nom,
+prénoms, **année de naissance**, qualité. Paginer avec `page` et `per_page` si `total_results`
+dépasse la page. Si les pièces donnent la date de naissance (l'acte et l'avant-contrat la portent),
+filtrer dès la requête : `date_naissance_personne_min` et `date_naissance_personne_max` (paramètres
+de la spécification OpenAPI de l'API, lue le 24/11/2026). **Contrôle d'homonymie** : ne garder que
+les sociétés où la naissance concorde, puis confirmer par le mois (RNE) ou la commune (pièces) ; une
+société non confirmée s'écrit « non attribuée ». Ensuite, par SIREN : BODACC (procédures,
+cessions), RNE (comptes, actes). Le résultat reste dans le dossier.
 
 ### Comptes annuels et actes — API RNE de l'INPI (testée le 18/11/2026)
 C'est la source primaire : le dépôt légal lui-même. Elle ferme le principal manque de `/actif` et

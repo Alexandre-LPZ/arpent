@@ -11,7 +11,8 @@ revendu, avec la même discipline que pour un immeuble. Deux conséquences :
   on le dit à l'expert-comptable : ce n'est jamais neutre.
 
 Règles d'Arpent inchangées : chiffres sourcés et datés, l'humain décide, le droit se valide chez un
-professionnel, jamais de fiche sur un particulier.
+professionnel, la contrepartie se vérifie dans les registres publics (`contrepartie.md`), la vie
+privée jamais.
 
 ## La méthode à rebours, version actif
 1. **Prix de revente prudent** : des transactions **réalisées** (résultats d'enchères, cessions
@@ -100,4 +101,4 @@ Fiche de terrain : **`terrain-bateaux.md`** (marché, état au-delà de l'appare
 - Une opération sur un actif dont la provenance n'est pas établie.
 - Une fiscalité affirmée sans la mention « à valider » : les régimes de la marge, du droit de suite
   et des taxes forfaitaires ont des conditions et des seuils qui changent.
-- Une fiche sur un vendeur ou un propriétaire particulier.
+- Une recherche sur la vie privée d'un vendeur, ou sur une personne qui n'est pas partie à la vente.

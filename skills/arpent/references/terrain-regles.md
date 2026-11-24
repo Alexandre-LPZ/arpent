@@ -59,3 +59,23 @@ Chaque question d'une fiche doit modifier **au moins une variable observable du 
 (prix de sortie, travaux, imprévus, frais, délai, trésorerie, marge) **ou produire un blocage
 explicite**. Une question sans effet sur la décision n'a pas sa place dans la fiche. Pas de score
 additionné, pas de moyenne : on lit dans l'ordre, la première réponse bloquante décide.
+
+## La question V : position du vendeur (règle du 24/11/2026)
+Après les huit questions de la classe, une neuvième, commune aux six fiches : **V, la position du
+vendeur** (urgence, solvabilité, leviers), établie par les pièces publiques et non par ce qu'il dit.
+Méthode, sources et limites dans `contrepartie.md`.
+
+| V | Lecture |
+|---|---|
+| **A** | aucune contrainte établie |
+| **B** | indices sans pièce (durée de vente, baisses, propos) |
+| **C** | contrainte établie par pièce (inscription, échéance datée, société en difficulté) |
+| **D** | vente forcée en cours |
+
+- Elle est **hors du tableau à rebours**, par construction : elle ne modifie jamais le prix d'achat
+  maximal, seulement l'offre d'ouverture, le calendrier, les conditions et la chance d'aboutir. C'est
+  la seule exception à la discipline des questions.
+- **Sans pièce, jamais C ni D.** Non recherchée, elle s'écrit « V non établie » et l'on négocie
+  comme en A. Elle ne bloque jamais un GO.
+- Elle n'est cherchée que pour une acquisition réellement envisagée, sur proposition et avec
+  l'accord de l'humain, jamais par défaut.

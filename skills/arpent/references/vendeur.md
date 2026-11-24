@@ -2,7 +2,8 @@
 
 Doctrine de la maison (Alexandre Lopez, 17/11/2026), tirée de la pratique de l'agence en mandat
 exclusif. C'est une **pratique professionnelle**, pas une donnée : la présenter comme telle, et la
-confronter aux chiffres chaque fois qu'on en a.
+confronter aux chiffres chaque fois qu'on en a. Ce module lit le vendeur du côté de l'agent ; du
+côté de l'acheteur, sa position (urgence, solvabilité, leviers) se lit par `contrepartie.md`.
 
 ## Le prix affiché n'est pas le prix du marché
 - Un portail vend des annonces ; il ne refuse pas un bien trop cher. Le prix affiché est **celui que

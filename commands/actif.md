@@ -23,3 +23,8 @@ date) » (`terrain-regles.md`, pièces visuelles) : indication, pas expertise.
 Format d'Arpent : **le verdict en une ligne vient en premier** (prix d'achat maximal, écart avec le
 prix demandé, et la variable inconnue qui décide), puis les chiffres, les alertes, ce qui manque.
 Répéter le prix maximal et l'écart dans la conclusion.
+
+**Position du vendeur (question V)** : ne la cherche pas par défaut. Si les réponses à la V sont
+dans le message, applique-les ; sinon, termine par une ligne « V non établie — vérifier la position
+du vendeur dans les registres publics (`/contrepartie`) ? ». Elle ne modifie jamais le prix d'achat
+maximal, seulement l'offre d'ouverture, le calendrier et les conditions (`contrepartie.md`).

@@ -29,6 +29,10 @@ ayants droit, avec leur notaire.
 - **Les biens** : fiche de chaque bien (`fiche-bien.md`) et valeur de marché (`estimation.md`), pour
   que chacun discute sur la même base chiffrée — c'est souvent ce qui fait retomber la tension.
 - **Jamais** : de fiche sur les personnes (héritiers), ni d'identification de particuliers via DVF.
+  En médiation, Arpent éclaire les sociétés et les biens, pas les héritiers. Si la structure du
+  marchand devient acheteuse, les règles de transparence ci-dessus s'appliquent d'abord ; la
+  vérification des vendeurs suit alors `contrepartie.md`, et rien de ce qui a été appris en
+  médiation ne sert de levier.
 
 ## Grille « on y va / on n'y va pas »
 - Le conflit est-il **soluble** (désaccord sur la valeur, le calendrier, l'usage) ou **personnel et
