@@ -24,6 +24,7 @@ la main.
 | `/marche` | Lecture du marché d'un territoire : acheteurs, équilibré ou vendeurs, tendance, sources datées, ce qui invaliderait la lecture — jamais de prévision chiffrée |
 | `/succession` | Cadrage d'un dossier de succession avec biens ou parts de SCI : issues possibles, transparence |
 | `/contrepartie` | Position du vendeur côté acheteur (urgence, solvabilité, leviers) par les registres publics des sociétés et la publicité foncière : question V (A à D), stratégie d'offre, limites légales. Le prix maximal ne bouge jamais |
+| `/sourcing` | Radar hebdomadaire des biens qui vont probablement se vendre avant l'annonce, dans une zone : procédures collectives, successions vacantes, adjudications, permis dormants, copropriétés fragiles, annonces qui durent, vacance. Fiches A/B/C avec action proposée, puis `/fiche-bien` → `/contrepartie` → `/bilan`. Part du bien ou de la société, jamais d'une personne |
 
 Le skill couvre aussi la construction neuve « prête à finir » et un tableau des textes de référence
 (loi Hoguet, lésion, TVA sur marge, décennale, passoires thermiques…).
@@ -103,6 +104,7 @@ section explains what it does for readers who don't read French.
 | `/marche` | Reading of a territory's market: buyers', balanced or sellers' market, trend, dated sources, what would invalidate the reading — never a numeric forecast |
 | `/succession` | Framing of an estate file with property or SCI shares: possible outcomes, transparency |
 | `/contrepartie` | The seller's position, from the buyer's side (urgency, solvency, leverage), read in public company registers and the land registry: question V (A to D), offer strategy, legal limits. The maximum price never moves |
+| `/sourcing` | Weekly radar of properties likely to be sold before they are listed, in a given area: insolvency proceedings, vacant estates sold by the State, court auctions, dormant building permits, distressed co-ownerships, listings that linger, vacancy. A/B/C sheets with a proposed action, then `/fiche-bien` → `/contrepartie` → `/bilan`. Starts from the property or the company, never from a person |
 
 The skill also covers "ready-to-finish" new builds and a table of reference texts (Hoguet law,
 lesion, VAT on margin, ten-year builder's liability, energy-sieve rules…).

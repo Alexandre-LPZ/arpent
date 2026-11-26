@@ -1,5 +1,15 @@
 # Journal des versions — Arpent
 
+## 0.10.0 — 26 novembre 2026 — le radar
+- **Nouveau module `/sourcing`** (`references/sourcing.md`) : radar hebdomadaire des biens qui vont
+  probablement se vendre avant l'annonce, dans une zone, à partir de signaux publics (procédures
+  collectives, successions vacantes vendues par l'État, adjudications, permis dormants, copropriétés
+  fragiles, annonces qui durent, vacance). Fiches A/B/C, action proposée, enchaînement
+  `/fiche-bien` → `/contrepartie` → `/bilan`. Sans pièce publiée, jamais A.
+- Même règle que la contrepartie : le radar part du bien ou de la société, jamais d'une personne ;
+  pas d'extraction automatique des portails, pas de données réservées aux collectivités.
+- `sources.md` : section « Sourcing » (cessions de l'État, registre des copropriétés, LOVAC, Sitadel).
+
 ## 0.9.2 — 24 novembre 2026 — leçons du premier test réel
 - **Nantissement des parts d'une SCI** : invisible sur l'état hypothécaire, publié au greffe ; à
   demander en même temps que l'état hypothécaire dès qu'un financement est évoqué. Pour une SCI, un

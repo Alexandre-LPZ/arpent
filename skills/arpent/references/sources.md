@@ -150,6 +150,17 @@ ADEME (année et surface quand le DPE les porte).
 À localiser au besoin : la base nationale des permis de construire (Sitadel) — seules des versions
 régionales ont été trouvées au 17/11/2026.
 
+## Sourcing — signaux publics d'une vente probable (`sourcing.md`)
+| Donnée | Source | Accès |
+|---|---|---|
+| Procédures collectives, dissolutions, radiations | API BODACC (DILA), voir ci-dessous | filtrer par département et par nature d'annonce |
+| Biens immobiliers issus de successions vacantes, vendus par le curateur (appel d'offres, enchères, gré à gré) | Cessions immobilières de l'État | `https://cessions.immobilier-etat.gouv.fr/` (vérifié le 26/11/2026 via impots.gouv.fr) |
+| Copropriétés immatriculées : lots, syndic, procédures, impayés | Registre national d'immatriculation des copropriétés (ANAH) | `62da71c068871f4c54258c7c` |
+| Mêmes données agrégées (Coproff) | ANAH | `68c8103f65789f729ee0c3c1` |
+| Logements vacants du parc privé par commune, par ancienneté (2020–2026) | LOVAC (ministère de la Transition écologique) | `61816c6e23197bb34835228e` — maille commune seulement ; la donnée à l'adresse est réservée aux collectivités |
+| Permis de construire, d'aménager, de démolir | Sitadel, bases régionales (voir ci-dessus) | pas de base nationale géolocalisée trouvée au 26/11/2026 |
+| Ventes judiciaires, adjudications | annonces légales, affichage au tribunal judiciaire, sites des ventes aux enchères des barreaux | pas d'API publique ; relevé manuel |
+
 ## Sociétés (SCI, marchands, agences)
 | Donnée | Source | Accès |
 |---|---|---|

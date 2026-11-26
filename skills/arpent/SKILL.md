@@ -1,6 +1,6 @@
 ---
 name: arpent
-description: Immobilier français avec les données publiques de data.gouv.fr. Utiliser pour un bilan d'opération de marchand de biens (TVA sur marge), le bilan d'un actif à revendre hors immobilier (parts de société, fonds de commerce, véhicule de collection, œuvre, bateau), une estimation de prix et un dossier de comparables (DVF), la fiche d'un bien ou d'une parcelle (cadastre, urbanisme, DPE, risques), l'attractivité d'une commune, la lecture du marché d'un territoire, la construction neuve « prête à finir », le cadrage d'un dossier de succession avec biens ou parts de SCI, ou la position d'un vendeur (urgence, solvabilité, leviers de négociation) établie par les registres publics des sociétés. Porte les garde-fous réglementaires français.
+description: Immobilier français avec les données publiques de data.gouv.fr. Utiliser pour un bilan d'opération de marchand de biens (TVA sur marge), le bilan d'un actif à revendre hors immobilier (parts de société, fonds de commerce, véhicule de collection, œuvre, bateau), une estimation de prix et un dossier de comparables (DVF), la fiche d'un bien ou d'une parcelle (cadastre, urbanisme, DPE, risques), l'attractivité d'une commune, la lecture du marché d'un territoire, la construction neuve « prête à finir », le cadrage d'un dossier de succession avec biens ou parts de SCI, la position d'un vendeur (urgence, solvabilité, leviers de négociation) établie par les registres publics des sociétés, ou le radar des biens qui vont probablement se vendre avant l'annonce (sourcing off-market par signaux publics). Porte les garde-fous réglementaires français.
 ---
 
 # Arpent — l'immobilier français avec les données publiques
@@ -51,6 +51,7 @@ cher quand on les oublie).
 | Prix d'un bien, comparables, dossier de prix juste | `references/estimation.md` | `/estimer` |
 | Lire le vendeur (A/B/C), les annonces, le mandat exclusif | `references/vendeur.md` | — |
 | Position du vendeur côté acheteur (question V : urgence, solvabilité, leviers), par les registres publics | `references/contrepartie.md` | `/contrepartie` |
+| Radar des biens qui vont se vendre avant l'annonce (signaux publics, fiches A/B/C, action proposée) | `references/sourcing.md` | `/sourcing` |
 | Tout savoir d'un bien ou d'une parcelle | `references/fiche-bien.md` | `/fiche-bien` |
 | Une commune vaut-elle une opération ? | `references/territoire.md` | `/ville` |
 | Où en est le marché, dans quel sens il va (sans prévision chiffrée) | `references/marche.md` | `/marche` |
